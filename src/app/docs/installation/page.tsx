@@ -29,7 +29,7 @@ const Page = (props: Props) => {
         </p>
         <div className="mt-4">
           <h3 className="text-xl font-bold text-text-default mt-8">
-            Install the package
+            1. Install the package
           </h3>
           <p className="text-lg text-text-default/60 mt-2">
             Install the package using npm.
@@ -40,7 +40,7 @@ const Page = (props: Props) => {
             </SyntaxHighlighter>
           </div>
           <h3 className="text-xl font-bold text-text-default mt-8">
-            Add the plugin to your tailwind.config.ts
+            2. Add the plugin to your tailwind.config.ts
           </h3>
           <div className="mt-4">
             <SyntaxHighlighter language="typescript" style={github}>
@@ -48,7 +48,8 @@ const Page = (props: Props) => {
             </SyntaxHighlighter>
           </div>
           <h3 className="text-xl font-bold text-text-default mt-8">
-            Add the package location to the contents in your tailwind.config.ts
+            3. Add the package location to the contents in your
+            tailwind.config.ts
           </h3>
           <div className="mt-4">
             <SyntaxHighlighter language="typescript" style={github}>
@@ -56,7 +57,7 @@ const Page = (props: Props) => {
             </SyntaxHighlighter>
           </div>
           <h3 className="text-xl font-bold text-text-default mt-8">
-            Import the component in your application
+            4. Import the component in your application
           </h3>
           <div className="mt-4">
             <SyntaxHighlighter language="typescript" style={github}>
