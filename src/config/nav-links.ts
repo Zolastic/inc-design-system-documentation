@@ -37,6 +37,16 @@ const docsSidebarLinks: SidebarNavItem[] = [
       },
     ],
   },
+  {
+    title: "Credits",
+    items: [
+      {
+        title: "Contributors",
+        href: "/docs/contributors",
+        items: [],
+      },
+    ],
+  },
 ];
 
 export { siteHeaderLinks, docsSidebarLinks };

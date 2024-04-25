@@ -5,14 +5,13 @@ import { DocsSidebarNav } from "@/components/docs-sidebar-nav";
 import { docsSidebarLinks } from "@/config/nav-links";
 import { capitalizeFirstLetter } from "@/lib/utils";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface DocsLayoutProps {
   children: React.ReactNode;
 }
 
 export default function DocsLayout({ children }: DocsLayoutProps) {
-  const router = useRouter();
   const pathname = usePathname();
   let pageTitle = pathname.split("/").pop();
 
