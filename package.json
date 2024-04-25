@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
+    "@radix-ui/react-scroll-area": "^1.0.5",
     "clsx": "^2.1.1",
     "inc-design-system": "file:../inc-design-system",
     "lucide-react": "^0.373.0",

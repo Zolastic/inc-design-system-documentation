@@ -1,4 +1,4 @@
-import { NavLinkType } from "@/types/nav-link-type";
+import { NavLinkType, SidebarNavItem } from "@/types/nav";
 
 const siteHeaderLinks: NavLinkType[] = [
   {
@@ -11,22 +11,32 @@ const siteHeaderLinks: NavLinkType[] = [
   },
 ];
 
-const docsSidebarLinks: NavLinkType[] = [
+const docsSidebarLinks: SidebarNavItem[] = [
   {
-    name: "Introduction",
-    link: "/docs",
+    title: "Getting Started",
+    items: [
+      {
+        title: "Introduction",
+        href: "/docs",
+        items: [],
+      },
+      {
+        title: "Installation",
+        href: "/docs/installation",
+        items: [],
+      },
+    ],
   },
   {
-    name: "installation",
-    link: "/docs/installation",
+    title: "Components",
+    items: [
+      {
+        title: "Accordion",
+        href: "/docs/components/accordion",
+        items: [],
+      },
+    ],
   },
 ];
 
-const docsComponentLinks: NavLinkType[] = [
-  {
-    name: "Accordion",
-    link: "/docs/components/accordion",
-  },
-];
-
-export { siteHeaderLinks, docsSidebarLinks, docsComponentLinks };
+export { siteHeaderLinks, docsSidebarLinks };
