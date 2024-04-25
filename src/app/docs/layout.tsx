@@ -27,7 +27,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             <DocsSidebarNav items={docsSidebarLinks} />
           </ScrollArea>
         </aside>
-        <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+        <main className="relative p-6 lg:gap-10 lg:p-8 xl:grid xl:grid-cols-[1fr_300px]">
           <div className="mx-auto w-full min-w-0">
             {pageTitle && (
               <DocsBreadCrumb pageTitle={capitalizeFirstLetter(pageTitle)} />
