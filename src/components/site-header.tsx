@@ -10,7 +10,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background text-text-default lg:sticky lg:top-0 lg:z-50">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background text-text-default">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
