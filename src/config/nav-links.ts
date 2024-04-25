@@ -35,6 +35,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/components/accordion",
         items: [],
       },
+      {
+        title: "Select",
+        href: "/docs/components/select",
+        items: [],
+      },
     ],
   },
   {

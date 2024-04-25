@@ -18,8 +18,11 @@ const Page = (props: Props) => {
       <div className="flex flex-col mt-4">
         {contributors.map((contributor, index) => (
           <div key={index} className="flex items-center space-x-4 mt-4">
-            <Link href={contributor.github} className="underline">
-              <h3 className="leading-none text-text-default no-underline group-hover:no-underline">
+            <Link
+              href={contributor.github}
+              className="underline underline-offset-4"
+            >
+              <h3 className="leading-none text-text-default font-medium">
                 {contributor.name}
               </h3>
             </Link>
