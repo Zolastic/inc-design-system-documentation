@@ -10,7 +10,7 @@ const Page = (props: Props) => {
   const importCode = `import {Alert} from "inc-design-system/alert"`;
 
   return (
-    <main className="flex min-h-screen flex-col items-start justify-start p-24 bg-background">
+    <>
       <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-text-default">
         Installation
       </h1>
@@ -66,7 +66,7 @@ const Page = (props: Props) => {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 
