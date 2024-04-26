@@ -55,10 +55,10 @@ const ComponentPropsTable = ({
       <Table>
         <TableHeader>
           <TableRow className="bg-grey-100">
-            <TableHead className="w-[100px]">Prop</TableHead>
-            <TableHead className="w-[100px]">Type</TableHead>
-            <TableHead className="w-[100px]">Description</TableHead>
-            <TableHead className="w-[100px]">Default</TableHead>
+            <TableHead className="w-[50px]">Prop</TableHead>
+            <TableHead className="w-[50px]">Type</TableHead>
+            <TableHead className="w-[250px]">Description</TableHead>
+            <TableHead className="w-[50px]">Default</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
