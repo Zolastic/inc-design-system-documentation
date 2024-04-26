@@ -1,8 +1,9 @@
 "use client";
 
-import ComponentUsage from "@/components/component-usage";
+import DocsComponentUsage from "@/components/docs-component-usage";
 import DocsComponentPreview from "@/components/docs-component-preview";
 import { docComponentsDocumentation } from "@/config/docs-components-documentation";
+import DocsComponentProps from "@/components/docs-component-props";
 
 type Props = {
   params: {
@@ -34,11 +35,16 @@ const Page = ({ params }: Props) => {
         />
       </div>
       <div className="mt-12">
-        <ComponentUsage
+        <DocsComponentUsage
           usageCodeImport={component.usageCodeImport}
           usageCode={component.usageCode}
         />
       </div>
+      {component.props && (
+        <div className="mt-12">
+          <DocsComponentProps DocComponentProps={component.props} />
+        </div>
+      )}
     </>
   );
 };

@@ -6,6 +6,19 @@ type DocComponentDocumentation = {
   previewComponent: () => JSX.Element;
   usageCodeImport: string;
   usageCode: string;
+  props?: DocComponentProp[];
 };
 
-export type { DocComponentDocumentation };
+type ComponentProp = {
+  prop: string;
+  type?: string;
+  description?: string;
+  default?: string;
+};
+
+type DocComponentProp = {
+  component: string;
+  props: ComponentProp[];
+};
+
+export type { DocComponentDocumentation, ComponentProp, DocComponentProp };

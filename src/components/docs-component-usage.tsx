@@ -9,7 +9,7 @@ type Props = {
   usageCode: string;
 };
 
-const ComponentUsage = ({ usageCodeImport, usageCode }: Props) => {
+const DocsComponentUsage = ({ usageCodeImport, usageCode }: Props) => {
   return (
     <>
       <h1 className="font-heading scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0 w-full">
@@ -47,4 +47,4 @@ const ComponentUsage = ({ usageCodeImport, usageCode }: Props) => {
   );
 };
 
-export default ComponentUsage;
+export default DocsComponentUsage;
