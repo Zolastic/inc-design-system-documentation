@@ -1,5 +1,6 @@
 "use client";
 
+import ComponentUsage from "@/components/component-usage";
 import DocsComponentPreview from "@/components/docs-component-preview";
 import { docComponentsDocumentation } from "@/config/docs-components-documentation";
 
@@ -32,48 +33,12 @@ const Page = ({ params }: Props) => {
           previewComponent={component.previewComponent()}
         />
       </div>
-      {/* <div className="mt-12">
-        <h1 className="font-heading scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0 w-full">
-          Usage
-        </h1>
-        <div className="max-w-21 min-w-[25rem] bg-grey-100 rounded-md overflow-hidden mt-4">
-          <div className="flex justify-between px-4 text-text-default text-xs items-center max-h-[28px]">
-            <p className="text-sm">Example Code</p>
-            {copy ? (
-              <button className="py-1 inline-flex items-center gap-1">
-                <Check size={16} className="mt-1" />
-                <span>Copied!</span>
-              </button>
-            ) : (
-              <button
-                className="py-1 inline-flex items-center gap-1"
-                onClick={() => {
-                  navigator.clipboard.writeText(code);
-                  setCopy(true);
-                  setTimeout(() => {
-                    setCopy(false);
-                  }, 2000);
-                }}
-              >
-                <Clipboard size={16} className="mt-1" />
-                <span>Copy code</span>
-              </button>
-            )}
-          </div>
-          <SyntaxHighlighter
-            language="tsx"
-            style={github}
-            customStyle={{
-              padding: "25px",
-              maxHeight: "322px",
-              overflowY: "auto",
-            }}
-            showLineNumbers
-          >
-            {code}
-          </SyntaxHighlighter>
-        </div>
-      </div> */}
+      <div className="mt-12">
+        <ComponentUsage
+          usageCodeImport={component.usageCodeImport}
+          usageCode={component.usageCode}
+        />
+      </div>
     </>
   );
 };
