@@ -45,6 +45,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/components/select",
         items: [],
       },
+      {
+        title: "Tag",
+        href: "/docs/components/tag",
+        items: [],
+      },
     ],
   },
   {
