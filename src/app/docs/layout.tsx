@@ -32,7 +32,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             {pageTitle && (
               <DocsBreadCrumb pageTitle={capitalizeFirstLetter(pageTitle)} />
             )}
-            <div className="space-y-2">{children}</div>
+            {children}
           </div>
         </main>
       </div>
