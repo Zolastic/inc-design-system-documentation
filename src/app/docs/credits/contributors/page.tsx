@@ -2,9 +2,7 @@ import { contributors } from "@/config/contributors";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = () => {
   return (
     <>
       <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-text-default">

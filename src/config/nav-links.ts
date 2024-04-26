@@ -62,7 +62,7 @@ const docsSidebarLinks: SidebarNavItem[] = [
     items: [
       {
         title: "Contributors",
-        href: "/docs/contributors",
+        href: "/docs/credits/contributors",
         items: [],
       },
     ],
