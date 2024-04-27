@@ -4,10 +4,12 @@ import multiSelectComponentDocumentation from "./component-documentation/multi-s
 import tagComponentDocumentation from "./component-documentation/tag";
 import checkableTagComponentDocumentation from "./component-documentation/checkable-tag";
 import buttonComponentDocumentation from "./component-documentation/button";
+import checkboxComponentDocumentation from "./component-documentation/checkbox";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
+  checkboxComponentDocumentation,
   multiSelectComponentDocumentation,
   selectComponentDocumentation,
   tagComponentDocumentation,

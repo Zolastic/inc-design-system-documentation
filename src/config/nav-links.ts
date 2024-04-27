@@ -46,6 +46,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Checkbox",
+        href: "/docs/components/checkbox",
+        items: [],
+      },
+      {
         title: "Multi Select",
         href: "/docs/components/multi-select",
         items: [],

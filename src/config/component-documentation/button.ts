@@ -4,7 +4,7 @@ import {
   DocComponentProp,
 } from "@/types/docs-component-documentation";
 
-const buttonTagProps: DocComponentProp[] = [
+const buttonProps: DocComponentProp[] = [
   {
     component: "Button",
     props: [
@@ -60,7 +60,7 @@ const buttonComponentDocumentation: DocComponentDocumentation = {
   previewComponent: ButtonDemo,
   usageCodeImport: `import { Button } from "inc-design-system/button";`,
   usageCode: `<Button>Button</Button>`,
-  props: buttonTagProps,
+  props: buttonProps,
 };
 
 export default buttonComponentDocumentation;
