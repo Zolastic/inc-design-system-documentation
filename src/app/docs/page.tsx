@@ -1,3 +1,6 @@
+import { Button } from "inc-design-system/button";
+import { Component, Download } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -13,6 +16,26 @@ const Page = (props: Props) => {
         your app&apos;s UI. Easily integrate them into your projects.
         Accessible, customizable, and open source.
       </p>
+      <div className="flex items-center justify-start mt-4 space-x-4">
+        <Link href="/docs/installation">
+          <Button
+            variant="primary"
+            className="flex justify-center items-center space-x-1"
+          >
+            <span>Installation</span>
+            <Download size={16} />
+          </Button>
+        </Link>
+        <Link href="/docs/components/accordion">
+          <Button
+            variant="primary"
+            className="flex justify-center items-center space-x-1"
+          >
+            <span>Components</span>
+            <Component size={16} />
+          </Button>
+        </Link>
+      </div>
     </>
   );
 };
