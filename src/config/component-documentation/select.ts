@@ -43,7 +43,7 @@ const selectProps: DocComponentProp[] = [
   },
 ];
 
-const selectComponentDocumentation: DocComponentDocumentation = {
+const select: DocComponentDocumentation = {
   url: "select",
   componentTitle: "Select",
   componentDescription: "Select component to select value from options.",
@@ -93,4 +93,4 @@ const selectComponentDocumentation: DocComponentDocumentation = {
   props: selectProps,
 };
 
-export default selectComponentDocumentation;
+export default select;
