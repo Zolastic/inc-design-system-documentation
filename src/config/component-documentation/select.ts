@@ -1,4 +1,4 @@
-import SelectDemo from "@/components/preview/select-preview";
+import SelectDemo from "@/components/preview/select";
 import {
   DocComponentDocumentation,
   DocComponentProp,

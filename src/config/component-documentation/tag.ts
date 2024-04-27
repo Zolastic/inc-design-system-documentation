@@ -1,4 +1,4 @@
-import TagDemo from "@/components/preview/tag-preview";
+import TagDemo from "@/components/preview/tag";
 import {
   DocComponentDocumentation,
   DocComponentProp,

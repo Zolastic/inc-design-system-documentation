@@ -1,4 +1,4 @@
-import CheckableTagDemo from "@/components/preview/checkable-tag-preview";
+import CheckableTagDemo from "@/components/preview/checkable-tag";
 import {
   DocComponentDocumentation,
   DocComponentProp,

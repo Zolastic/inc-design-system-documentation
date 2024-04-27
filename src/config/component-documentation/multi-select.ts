@@ -1,4 +1,4 @@
-import MultiSelectDemo from "@/components/preview/multi-select-preview";
+import MultiSelectDemo from "@/components/preview/multi-select";
 import {
   DocComponentDocumentation,
   DocComponentProp,
