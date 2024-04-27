@@ -11,7 +11,6 @@ type Props = {
 };
 
 const DocsComponentPreview = ({ previewComponent, previewCode }: Props) => {
-  const [copy, setCopy] = useState(false);
   const [showPreview, setShowPreview] = useState(true);
 
   return (
@@ -39,7 +38,7 @@ const DocsComponentPreview = ({ previewComponent, previewCode }: Props) => {
       <div className="mt-4 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border">
         <div
           className={`preview flex min-h-[350px] w-full justify-center items-center overflow-auto ${
-            showPreview ? "p-10" : "p-0"
+            showPreview ? "p-10" : "p-0 bg-grey-100 !items-start"
           }`}
         >
           {showPreview ? (
