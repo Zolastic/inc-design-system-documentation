@@ -56,6 +56,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Radio Group",
+        href: "/docs/components/radio-group",
+        items: [],
+      },
+      {
         title: "Select",
         href: "/docs/components/select",
         items: [],
