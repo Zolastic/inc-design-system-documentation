@@ -75,6 +75,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/components/tag",
         items: [],
       },
+      {
+        title: "Textarea",
+        href: "/docs/components/textarea",
+        items: [],
+      },
     ],
   },
   {

@@ -1,4 +1,3 @@
-import ButtonDemo from "@/components/preview/button";
 import RadioGroupDemo from "@/components/preview/radio-group";
 import {
   DocComponentDocumentation,
