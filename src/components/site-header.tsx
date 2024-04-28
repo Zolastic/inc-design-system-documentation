@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className={`lg:hidden ${mobileMenuOpen ? "hidden" : "flex"}`}>
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-grey-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Homepage Link</span>
@@ -49,7 +49,7 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto text-text-default bg-textColour px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto text-text-default bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link
               href="/"
@@ -61,7 +61,7 @@ export default function Navbar() {
             </Link>
             <button
               type="button"
-              className="block -m-2.5 rounded-md p-2.5 text-gray-700"
+              className="block -m-2.5 rounded-md p-2.5 text-grey-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
