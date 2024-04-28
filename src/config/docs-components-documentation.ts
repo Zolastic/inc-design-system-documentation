@@ -6,11 +6,13 @@ import checkableTagComponentDocumentation from "./component-documentation/checka
 import buttonComponentDocumentation from "./component-documentation/button";
 import checkboxComponentDocumentation from "./component-documentation/checkbox";
 import radioComponentDocumentation from "./component-documentation/radio-group";
+import inputComponentDocumentation from "./component-documentation/input";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
+  inputComponentDocumentation,
   multiSelectComponentDocumentation,
   radioComponentDocumentation,
   selectComponentDocumentation,

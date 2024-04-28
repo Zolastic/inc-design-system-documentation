@@ -51,6 +51,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Input",
+        href: "/docs/components/input",
+        items: [],
+      },
+      {
         title: "Multi Select",
         href: "/docs/components/multi-select",
         items: [],
