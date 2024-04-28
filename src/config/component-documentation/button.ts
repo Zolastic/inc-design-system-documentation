@@ -38,6 +38,11 @@ const buttonProps: DocComponentProp[] = [
         description: "Whether the button is disabled. Default is false.",
         default: "false",
       },
+      {
+        prop: "onClick",
+        type: "(event: React.MouseEvent<HTMLButtonElement>) => void",
+        description: "The function to call when the button is clicked.",
+      },
       // Other React.ButtonHTMLAttributes<HTMLButtonElement> props are inherited
       // Props like onClick, type, etc. are available but not documented here
     ],

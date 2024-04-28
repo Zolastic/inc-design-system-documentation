@@ -39,7 +39,7 @@ const checkboxProps: DocComponentProp[] = [
       },
       {
         prop: "onCheckedChange",
-        type: "function",
+        type: "(checked: boolean | 'indeterminate') => void",
         description:
           "Callback when the checked state of the checkbox changes. No default value.",
       },

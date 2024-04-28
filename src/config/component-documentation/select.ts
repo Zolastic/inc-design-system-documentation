@@ -10,7 +10,7 @@ const selectProps: DocComponentProp[] = [
     props: [
       {
         prop: "onValueChange",
-        type: "function",
+        type: "(value: string) => void",
         description:
           "A callback function is invoked when the selected value changes. Receives the newly selected value as an argument.",
       },
@@ -28,6 +28,12 @@ const selectProps: DocComponentProp[] = [
         prop: "disabled",
         type: "boolean",
         description: "Disables the select component.",
+      },
+      {
+        prop: "onOpenChange",
+        type: "(open: boolean) => void",
+        description:
+          "Event handler called when the open state of the select changes.",
       },
     ],
   },
