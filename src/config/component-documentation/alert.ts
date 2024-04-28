@@ -53,7 +53,7 @@ const alertComponentDocumentation: DocComponentDocumentation = {
   
   const AlertDemo = () => {
     return (
-      <Alert variant="success" dismissible onDismiss={() => alert("Dismissed!")}>
+      <Alert variant="success">
         <h1>Successful!</h1>
       </Alert>
     );
