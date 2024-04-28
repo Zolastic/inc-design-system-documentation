@@ -10,12 +10,14 @@ import inputComponentDocumentation from "./component-documentation/input";
 import textareaComponentDocumentation from "./component-documentation/textarea";
 import alertComponentDocumentation from "./component-documentation/alert";
 import switchComponentDocumentation from "./component-documentation/switch";
+import fileUploadComponentDocumentation from "./component-documentation/file-upload";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   alertComponentDocumentation,
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
+  fileUploadComponentDocumentation,
   inputComponentDocumentation,
   multiSelectComponentDocumentation,
   radioComponentDocumentation,
