@@ -11,8 +11,10 @@ import textareaComponentDocumentation from "./component-documentation/textarea";
 import alertComponentDocumentation from "./component-documentation/alert";
 import switchComponentDocumentation from "./component-documentation/switch";
 import fileUploadComponentDocumentation from "./component-documentation/file-upload";
+import accordionComponentDocumentation from "./component-documentation/accordion";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
+  accordionComponentDocumentation,
   alertComponentDocumentation,
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
