@@ -36,6 +36,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Alert",
+        href: "/docs/components/alert",
+        items: [],
+      },
+      {
         title: "Button",
         href: "/docs/components/button",
         items: [],

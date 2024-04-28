@@ -8,8 +8,10 @@ import checkboxComponentDocumentation from "./component-documentation/checkbox";
 import radioComponentDocumentation from "./component-documentation/radio-group";
 import inputComponentDocumentation from "./component-documentation/input";
 import textareaComponentDocumentation from "./component-documentation/textarea";
+import alertComponentDocumentation from "./component-documentation/alert";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
+  alertComponentDocumentation,
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
