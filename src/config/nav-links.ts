@@ -76,6 +76,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Switch",
+        href: "/docs/components/switch",
+        items: [],
+      },
+      {
         title: "Tag",
         href: "/docs/components/tag",
         items: [],

@@ -9,6 +9,7 @@ import radioComponentDocumentation from "./component-documentation/radio-group";
 import inputComponentDocumentation from "./component-documentation/input";
 import textareaComponentDocumentation from "./component-documentation/textarea";
 import alertComponentDocumentation from "./component-documentation/alert";
+import switchComponentDocumentation from "./component-documentation/switch";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   alertComponentDocumentation,
@@ -19,6 +20,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   multiSelectComponentDocumentation,
   radioComponentDocumentation,
   selectComponentDocumentation,
+  switchComponentDocumentation,
   tagComponentDocumentation,
   textareaComponentDocumentation,
 ];
