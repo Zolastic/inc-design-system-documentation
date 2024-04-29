@@ -12,6 +12,7 @@ import alertComponentDocumentation from "./component-documentation/alert";
 import switchComponentDocumentation from "./component-documentation/switch";
 import fileUploadComponentDocumentation from "./component-documentation/file-upload";
 import accordionComponentDocumentation from "./component-documentation/accordion";
+import defaultListComponentDocumentation from "./component-documentation/default-list";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -19,6 +20,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   buttonComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
+  defaultListComponentDocumentation,
   fileUploadComponentDocumentation,
   inputComponentDocumentation,
   multiSelectComponentDocumentation,

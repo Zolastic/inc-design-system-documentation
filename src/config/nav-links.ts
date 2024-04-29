@@ -56,6 +56,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Default List",
+        href: "/docs/components/default-list",
+        items: [],
+      },
+      {
         title: "File Upload",
         href: "/docs/components/file-upload",
         items: [],
