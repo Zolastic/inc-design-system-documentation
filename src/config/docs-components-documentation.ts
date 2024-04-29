@@ -12,6 +12,7 @@ import alertComponentDocumentation from "./component-documentation/alert";
 import switchComponentDocumentation from "./component-documentation/switch";
 import fileUploadComponentDocumentation from "./component-documentation/file-upload";
 import accordionComponentDocumentation from "./component-documentation/accordion";
+import scrollableListComponentDocumentation from "./component-documentation/scrollable-list";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -23,6 +24,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   inputComponentDocumentation,
   multiSelectComponentDocumentation,
   radioComponentDocumentation,
+  scrollableListComponentDocumentation,
   selectComponentDocumentation,
   switchComponentDocumentation,
   tagComponentDocumentation,

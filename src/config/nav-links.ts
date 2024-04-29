@@ -76,6 +76,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Scrollable List",
+        href: "/docs/components/scrollable-list",
+        items: [],
+      },
+      {
         title: "Select",
         href: "/docs/components/select",
         items: [],
