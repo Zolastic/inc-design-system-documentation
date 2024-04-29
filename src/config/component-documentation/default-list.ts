@@ -32,7 +32,7 @@ const defaultListComponentDocumentation: DocComponentDocumentation = {
   url: "default-list",
   componentTitle: "Default List",
   componentDescription:
-    "Displays a list of items with a header and a footer. (Not Scrollable)",
+    "Displays a list of items with an optional header and a footer. (Not Scrollable)",
   previewCode: `import DefaultList from "inc-design-system/defaultList";
   import React from "react";
   
