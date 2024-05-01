@@ -40,6 +40,11 @@ body {
   @apply bg-transparent;
 }
 
+/* Scrollbar will be shown on hover */
 .docsSidebarNavContainer::-webkit-scrollbar-thumb {
+  @apply bg-transparent;
+}
+
+.docsSidebarNavContainer:hover::-webkit-scrollbar-thumb {
   @apply bg-gray-300 rounded-full;
 }
