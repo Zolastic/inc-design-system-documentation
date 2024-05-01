@@ -50,7 +50,7 @@ export function DocsSidebarNavItems({
               item.disabled && "cursor-not-allowed opacity-60",
               pathname === item.href
                 ? "font-medium text-foreground"
-                : "text-muted-foreground"
+                : "text-text-default/80"
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}

@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.docsSidebarNavContainer::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.docsSidebarNavContainer::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.docsSidebarNavContainer::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
