@@ -13,11 +13,13 @@ import switchComponentDocumentation from "./component-documentation/switch";
 import fileUploadComponentDocumentation from "./component-documentation/file-upload";
 import accordionComponentDocumentation from "./component-documentation/accordion";
 import defaultListComponentDocumentation from "./component-documentation/default-list";
+import calendarComponentDocumentation from "./component-documentation/calendar";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
   alertComponentDocumentation,
   buttonComponentDocumentation,
+  calendarComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
   defaultListComponentDocumentation,

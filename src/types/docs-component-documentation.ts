@@ -16,9 +16,20 @@ type ComponentProp = {
   default?: string;
 };
 
+type DocComponentLink = {
+  title: string;
+  url: string;
+};
+
 type DocComponentProp = {
   component: string;
   props: ComponentProp[];
+  links?: DocComponentLink[];
 };
 
-export type { DocComponentDocumentation, ComponentProp, DocComponentProp };
+export type {
+  DocComponentDocumentation,
+  ComponentProp,
+  DocComponentProp,
+  DocComponentLink,
+};
