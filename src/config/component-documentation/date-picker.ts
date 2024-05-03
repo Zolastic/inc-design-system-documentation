@@ -47,6 +47,20 @@ const datePickerProps: DocComponentProp[] = [
           "A string that is added to the class list of the button element in the date picker. This can be used to add custom styles to the button.",
         default: "''",
       },
+      {
+        prop: "onOpenChange",
+        type: "function",
+        description:
+          "A function that is called when the visibility of the date picker changes.",
+        default: "-",
+      },
+      {
+        prop: "modal",
+        type: "boolean",
+        description:
+          "A boolean that determines whether the date picker is displayed as a modal.",
+        default: "false",
+      },
     ],
   },
 ];
