@@ -96,6 +96,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Paginated List",
+        href: "/docs/components/paginated-list",
+        items: [],
+      },
+      {
         title: "Popover",
         href: "/docs/components/popover",
         items: [],
