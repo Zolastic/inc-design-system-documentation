@@ -17,6 +17,7 @@ import calendarComponentDocumentation from "./component-documentation/calendar";
 import datePickerComponentDocumentation from "./component-documentation/date-picker";
 import popoverComponentDocumentation from "./component-documentation/popover";
 import paginatedListComponentDocumentation from "./component-documentation/paginated-list";
+import rangeDatePickerComponentDocumentation from "./component-documentation/range-date-picker";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -33,6 +34,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   paginatedListComponentDocumentation,
   popoverComponentDocumentation,
   radioComponentDocumentation,
+  rangeDatePickerComponentDocumentation,
   selectComponentDocumentation,
   switchComponentDocumentation,
   tagComponentDocumentation,

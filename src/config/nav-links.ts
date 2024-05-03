@@ -111,6 +111,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Range Date Picker",
+        href: "/docs/components/range-date-picker",
+        items: [],
+      },
+      {
         title: "Select",
         href: "/docs/components/select",
         items: [],
