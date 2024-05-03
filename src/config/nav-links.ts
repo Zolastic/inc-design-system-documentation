@@ -25,6 +25,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/installation",
         items: [],
       },
+      {
+        title: "Colour Palette",
+        href: "/docs/colour-palette",
+        items: [],
+      },
     ],
   },
   {
