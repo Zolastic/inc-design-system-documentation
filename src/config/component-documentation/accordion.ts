@@ -41,33 +41,33 @@ const accordionComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "A vertically stacked set of interactive headings that each reveal a section of content.",
   previewCode: `import Accordion from "inc-design-system/accordion";
-  import React from "react";
-  
-  const AccordionDemo = () => {
-    const headers: string[] = ["Header 1"];
-  
-    const data = Array.from({ length: 1 }, (_, i) => ({
-      header: \`accordion \${i + 1}\`,
-      item: \`content-\${i + 1}\`,
-    }));
-  
-    return (
-      <Accordion headers={headers}>
-        {data.map((item, index) => {
-          return (
-            <div key={index}>
-              <div>
-                <h1 className="text-lg font-bold">{item.header}</h1>
-                <p>{item.item}</p>
-              </div>
+import React from "react";
+
+const AccordionDemo = () => {
+  const headers: string[] = ["Header 1"];
+
+  const data = Array.from({ length: 1 }, (_, i) => ({
+    header: \`accordion \${i + 1}\`,
+    item: \`content-\${i + 1}\`,
+  }));
+
+  return (
+    <Accordion headers={headers}>
+      {data.map((item, index) => {
+        return (
+          <div key={index}>
+            <div>
+              <h1 className="text-lg font-bold">{item.header}</h1>
+              <p>{item.item}</p>
             </div>
-          );
-        })}
-      </Accordion>
-    );
-  };
-  
-  export default AccordionDemo;`,
+          </div>
+        );
+      })}
+    </Accordion>
+  );
+};
+
+export default AccordionDemo;`,
   previewComponent: AccordionDemo,
   usageCodeImport: `import Accordion from "inc-design-system/accordion";`,
   usageCode: `<Accordion headers={headers}>

@@ -49,17 +49,17 @@ const alertComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Alert",
   componentDescription: "Display warning messages that require attention.",
   previewCode: `import { Alert } from "inc-design-system/alert";
-  import React from "react";
-  
-  const AlertDemo = () => {
-    return (
-      <Alert variant="success">
-        <h1>Successful!</h1>
-      </Alert>
-    );
-  };
-  
-  export default AlertDemo;`,
+import React from "react";
+
+const AlertDemo = () => {
+  return (
+    <Alert variant="success">
+      <h1>Successful!</h1>
+    </Alert>
+  );
+};
+
+export default AlertDemo;`,
   previewComponent: AlertDemo,
   usageCodeImport: `import { Alert } from "inc-design-system/alert";`,
   usageCode: `<Alert>

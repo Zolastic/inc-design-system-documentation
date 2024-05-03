@@ -39,13 +39,13 @@ const textareaComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "Displays a form textarea or a component that looks like a textarea.",
   previewCode: `import { Textarea } from "inc-design-system/textarea";
-  import React from "react";
-  
-  const TextareaDemo = () => {
-    return <Textarea autosize={true} showCharCount maxLength={100} />;
-  };
-  
-  export default TextareaDemo;`,
+import React from "react";
+
+const TextareaDemo = () => {
+  return <Textarea autosize={true} showCharCount maxLength={100} />;
+};
+
+export default TextareaDemo;`,
   previewComponent: TextareaDemo,
   usageCodeImport: `import { Textarea } from "inc-design-system/textarea";`,
   usageCode: `<Textarea />`,

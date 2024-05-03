@@ -52,13 +52,13 @@ const switchComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "Displays a button or a component that looks like a button.",
   previewCode: `import { Switch } from "inc-design-system/switch";
-  import React from "react";
-  
-  const SwitchDemo = () => {
-    return <Switch defaultChecked={true} size="medium" />;
-  };
-  
-  export default SwitchDemo;`,
+import React from "react";
+
+const SwitchDemo = () => {
+  return <Switch defaultChecked={true} size="medium" />;
+};
+
+export default SwitchDemo;`,
   previewComponent: SwitchDemo,
   usageCodeImport: `import { Switch } from "inc-design-system/switch";`,
   usageCode: `<Switch />`,

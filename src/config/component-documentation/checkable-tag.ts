@@ -83,13 +83,13 @@ const checkableTagComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "Used for marking and categorisation. It works like Checkbox, click it to toggle checked state.",
   previewCode: `import { CheckableTag } from "inc-design-system/tag";
-  import React from "react";
-  
-  const CheckableTagDemo = () => {
-    return <CheckableTag>CheckableTag</CheckableTag>;
-  };
-  
-  export default CheckableTagDemo;`,
+import React from "react";
+
+const CheckableTagDemo = () => {
+  return <CheckableTag>CheckableTag</CheckableTag>;
+};
+
+export default CheckableTagDemo;`,
   previewComponent: CheckableTagDemo,
   usageCodeImport: `import { CheckableTag } from "inc-design-system/tag";`,
   usageCode: `<CheckableTag>CheckableTag</CheckableTag>`,

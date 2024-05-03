@@ -86,16 +86,16 @@ const calendarComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Calendar",
   componentDescription: "A container that displays data in calendar form.",
   previewCode: `"use client";
-  import { Calendar } from "inc-design-system/calendar";
-  import React from "react";
-  
-  const CalendarDemo = () => {
-    const [date, setDate] = React.useState<Date | undefined>(new Date());
-  
-    return <Calendar mode="single" selected={date} onSelect={setDate} />;
-  };
-  
-  export default CalendarDemo;`,
+import { Calendar } from "inc-design-system/calendar";
+import React from "react";
+
+const CalendarDemo = () => {
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
+
+  return <Calendar mode="single" selected={date} onSelect={setDate} />;
+};
+
+export default CalendarDemo;`,
   previewComponent: CalendarDemo,
   usageCodeImport: `import { Calendar } from "inc-design-system/calendar";`,
   usageCode: `const [date, setDate] = React.useState<Date | undefined>(new Date());

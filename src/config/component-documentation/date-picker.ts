@@ -56,23 +56,23 @@ const datePickerComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Date Picker",
   componentDescription: "To select or input a date.",
   previewCode: `import { DatePicker } from "inc-design-system/datePicker";
-  import React from "react";
-  
-  const DatePickerDemo = () => {
-    const [selectedDate, setSelectedDate] = React.useState<Date | undefined>(
-      new Date()
-    );
-  
-    return (
-      <DatePicker
-        selected={selectedDate}
-        onSelect={setSelectedDate}
-        placeholder="Select Date"
-      />
-    );
-  };
-  
-  export default DatePickerDemo;`,
+import React from "react";
+
+const DatePickerDemo = () => {
+  const [selectedDate, setSelectedDate] = React.useState<Date | undefined>(
+    new Date()
+  );
+
+  return (
+    <DatePicker
+      selected={selectedDate}
+      onSelect={setSelectedDate}
+      placeholder="Select Date"
+    />
+  );
+};
+
+export default DatePickerDemo;`,
   previewComponent: DatePickerDemo,
   usageCodeImport: `import { DatePicker } from "inc-design-system/datePicker";`,
   usageCode: `const [selectedDate, setSelectedDate] = React.useState<Date | undefined>(

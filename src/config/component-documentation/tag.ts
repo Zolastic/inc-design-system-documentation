@@ -59,13 +59,13 @@ const tagComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Tag",
   componentDescription: "Used for marking and categorisation.",
   previewCode: `import { Tag } from "inc-design-system/tag";
-  import React from "react";
-  
-  const TagDemo = () => {
-    return <Tag>Tag</Tag>;
-  };
-  
-  export default TagDemo;`,
+import React from "react";
+
+const TagDemo = () => {
+  return <Tag>Tag</Tag>;
+};
+
+export default TagDemo;`,
   previewComponent: TagDemo,
   usageCodeImport: `import { Tag } from "inc-design-system/tag";`,
   usageCode: `<Tag>Tag</Tag>`,

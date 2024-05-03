@@ -44,29 +44,28 @@ const fileUploadComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "File Upload",
   componentDescription:
     "Used to select and upload files or drag and drop files.",
-  previewCode: `
-  import { FileUpload } from "inc-design-system/upload";
-  import React from "react";
+  previewCode: `import { FileUpload } from "inc-design-system/upload";
+import React from "react";
 
-  const FileUploadDemo = () => {
-    const handleFileChange = (files: File[]) => {
-      alert(
-        \`You have selected \${files.length} file(s): \${files
-          .map((file) => file.name)
-          .join(", ")}\`
-      );
-    };
-
-    return (
-      <FileUpload
-        width="full"
-        transparent={false}
-        onFileChange={handleFileChange}
-      />
+const FileUploadDemo = () => {
+  const handleFileChange = (files: File[]) => {
+    alert(
+      \`You have selected \${files.length} file(s): \${files
+        .map((file) => file.name)
+        .join(", ")}\`
     );
   };
 
-  export default FileUploadDemo;`,
+  return (
+    <FileUpload
+      width="full"
+      transparent={false}
+      onFileChange={handleFileChange}
+    />
+  );
+};
+
+export default FileUploadDemo;`,
   previewComponent: FileUploadDemo,
   usageCodeImport: `import { FileUpload } from "inc-design-system/upload"`,
   usageCode: `<FileUpload />`,

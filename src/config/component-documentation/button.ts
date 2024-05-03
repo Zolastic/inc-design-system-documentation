@@ -55,13 +55,13 @@ const buttonComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "Displays a button or a component that looks like a button.",
   previewCode: `import { Button } from "inc-design-system/button";
-  import React from "react";
-  
-  const ButtonDemo = () => {
-    return <Button>Button</Button>;
-  };
-  
-  export default ButtonDemo;`,
+import React from "react";
+
+const ButtonDemo = () => {
+  return <Button>Button</Button>;
+};
+
+export default ButtonDemo;`,
   previewComponent: ButtonDemo,
   usageCodeImport: `import { Button } from "inc-design-system/button";`,
   usageCode: `<Button>Button</Button>`,

@@ -117,20 +117,20 @@ const multiSelectComponentDocumentation: DocComponentDocumentation = {
   componentDescription:
     "Multi select component to select multiple values from options.",
   previewCode: `import { MultiSelect, MultiSelectItem } from "inc-design-system/multiselect";
-  import React from "react";
-  
-  type Props = {};
-  
-  const MultiSelectDemo = (props: Props) => {
-    const data: MultiSelectItem[] = Array.from({ length: 100 }, (_, i) => ({
-      label: \`Option \${i + 1}\`,
-      value: \`option-\${i + 1}\`,
-    }));
-  
-    return <MultiSelect items={data} />;
-  };
-  
-  export default MultiSelectDemo;`,
+import React from "react";
+
+type Props = {};
+
+const MultiSelectDemo = (props: Props) => {
+  const data: MultiSelectItem[] = Array.from({ length: 100 }, (_, i) => ({
+    label: \`Option \${i + 1}\`,
+    value: \`option-\${i + 1}\`,
+  }));
+
+  return <MultiSelect items={data} />;
+};
+
+export default MultiSelectDemo;`,
   previewComponent: MultiSelectDemo,
   usageCodeImport: `import { MultiSelect, MultiSelectItem } from "inc-design-system/multiselect";`,
   usageCode: `<MultiSelect items={data} />`,

@@ -75,13 +75,13 @@ const checkboxComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Checkbox",
   componentDescription: "Collect user's choices.",
   previewCode: `import { Checkbox } from "inc-design-system/checkbox";
-  import React from "react";
-  
-  const CheckboxDemo = () => {
-    return <Checkbox />;
-  };
-  
-  export default CheckboxDemo;`,
+import React from "react";
+
+const CheckboxDemo = () => {
+  return <Checkbox />;
+};
+
+export default CheckboxDemo;`,
   previewComponent: CheckboxDemo,
   usageCodeImport: `import { Checkbox } from "inc-design-system/checkbox";`,
   usageCode: `<Checkbox />`,
