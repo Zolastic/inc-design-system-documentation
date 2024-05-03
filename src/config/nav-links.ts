@@ -61,6 +61,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Date Picker",
+        href: "/docs/components/date-picker",
+        items: [],
+      },
+      {
         title: "Default List",
         href: "/docs/components/default-list",
         items: [],

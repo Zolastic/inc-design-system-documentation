@@ -14,6 +14,7 @@ import fileUploadComponentDocumentation from "./component-documentation/file-upl
 import accordionComponentDocumentation from "./component-documentation/accordion";
 import defaultListComponentDocumentation from "./component-documentation/default-list";
 import calendarComponentDocumentation from "./component-documentation/calendar";
+import datePickerComponentDocumentation from "./component-documentation/date-picker";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -22,6 +23,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   calendarComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
+  datePickerComponentDocumentation,
   defaultListComponentDocumentation,
   fileUploadComponentDocumentation,
   inputComponentDocumentation,
