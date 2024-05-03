@@ -4,10 +4,13 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { siteHeaderLinks } from "@/config/nav-links";
+import { docsSidebarLinks, siteHeaderLinks } from "@/config/nav-links";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background text-text-default">
@@ -71,15 +74,34 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {siteHeaderLinks.map((link) => (
-                  <Link
-                    key={link.link}
-                    href={link.link}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-primary"
-                  >
-                    {link.name}
-                  </Link>
+                {docsSidebarLinks.map((item, index) => (
+                  <div key={index}>
+                    <h3 className="text-lg font-semibold">{item.title}</h3>
+                    <div className="mt-2 space-y-2">
+                      {item.items.map((subItem, subIndex) =>
+                        subItem.href && !subItem.disabled ? (
+                          <Link
+                            key={subIndex}
+                            href={subItem.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className={cn(
+                              "block p-2 rounded-md hover:bg-gray-900/10",
+                              pathname === subItem.href ? "bg-gray-900/10" : ""
+                            )}
+                          >
+                            {subItem.title}
+                          </Link>
+                        ) : (
+                          <span
+                            key={subIndex}
+                            className="block p-2 cursor-not-allowed text-muted-foreground"
+                          >
+                            {subItem.title}
+                          </span>
+                        )
+                      )}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
