@@ -30,6 +30,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/colour-palette",
         items: [],
       },
+      {
+        title: "Styling Guidelines",
+        href: "/docs/styling-guidelines",
+        items: [],
+      },
     ],
   },
   {
