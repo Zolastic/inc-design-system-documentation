@@ -28,11 +28,13 @@ const calendarProps: DocComponentProp[] = [
         prop: "showOutsideDays",
         type: "boolean",
         description: "Whether to show outside days or not.",
+        default: "true",
       },
       {
         prop: "today",
         type: "Date",
         description: "The current date.",
+        default: "new Date()",
       },
       {
         prop: "selected",
@@ -55,16 +57,19 @@ const calendarProps: DocComponentProp[] = [
         prop: "disabled",
         type: "Date[]",
         description: "The dates that should be disabled.",
+        default: "[]",
       },
       {
         prop: "hidden",
         type: "Date[]",
         description: "The dates that should be hidden.",
+        default: "[]",
       },
       {
         prop: "mode",
         type: "'single' | 'multiple' | 'range'",
         description: "The selection mode. Default is 'single'.",
+        default: "'single'",
       },
       {
         prop: "props",
