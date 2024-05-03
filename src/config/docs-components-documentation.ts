@@ -15,6 +15,7 @@ import accordionComponentDocumentation from "./component-documentation/accordion
 import defaultListComponentDocumentation from "./component-documentation/default-list";
 import calendarComponentDocumentation from "./component-documentation/calendar";
 import datePickerComponentDocumentation from "./component-documentation/date-picker";
+import popoverComponentDocumentation from "./component-documentation/popover";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -28,6 +29,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   fileUploadComponentDocumentation,
   inputComponentDocumentation,
   multiSelectComponentDocumentation,
+  popoverComponentDocumentation,
   radioComponentDocumentation,
   selectComponentDocumentation,
   switchComponentDocumentation,

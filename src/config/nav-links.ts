@@ -96,6 +96,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Popover",
+        href: "/docs/components/popover",
+        items: [],
+      },
+      {
         title: "Radio Group",
         href: "/docs/components/radio-group",
         items: [],
