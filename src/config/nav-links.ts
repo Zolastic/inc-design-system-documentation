@@ -91,6 +91,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Modal",
+        href: "/docs/components/modal",
+        items: [],
+      },
+      {
         title: "Multi Select",
         href: "/docs/components/multi-select",
         items: [],

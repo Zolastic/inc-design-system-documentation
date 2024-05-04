@@ -18,6 +18,7 @@ import datePickerComponentDocumentation from "./component-documentation/date-pic
 import popoverComponentDocumentation from "./component-documentation/popover";
 import paginatedListComponentDocumentation from "./component-documentation/paginated-list";
 import rangeDatePickerComponentDocumentation from "./component-documentation/range-date-picker";
+import modalComponentDocumentation from "./component-documentation/modal";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -30,6 +31,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   defaultListComponentDocumentation,
   fileUploadComponentDocumentation,
   inputComponentDocumentation,
+  modalComponentDocumentation,
   multiSelectComponentDocumentation,
   paginatedListComponentDocumentation,
   popoverComponentDocumentation,
