@@ -46,6 +46,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Alert Modal",
+        href: "/docs/components/alert-modal",
+        items: [],
+      },
+      {
         title: "Alert",
         href: "/docs/components/alert",
         items: [],
