@@ -21,6 +21,7 @@ import rangeDatePickerComponentDocumentation from "./component-documentation/ran
 import modalComponentDocumentation from "./component-documentation/modal";
 import alertModalComponentDocumentation from "./component-documentation/alert-modal";
 import badgeComponentDocumentation from "./component-documentation/badge";
+import cardComponentDocumentation from "./component-documentation/card";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -29,6 +30,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   badgeComponentDocumentation,
   buttonComponentDocumentation,
   calendarComponentDocumentation,
+  cardComponentDocumentation,
   checkableTagComponentDocumentation,
   checkboxComponentDocumentation,
   datePickerComponentDocumentation,

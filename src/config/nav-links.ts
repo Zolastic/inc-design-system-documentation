@@ -71,6 +71,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Card",
+        href: "/docs/components/card",
+        items: [],
+      },
+      {
         title: "Checkable Tag",
         href: "/docs/components/checkable-tag",
         items: [],
