@@ -84,26 +84,30 @@ const ComponentPropsTable = ({
           </div>
         )}
       </div>
-      <Table className="mt-5">
-        <TableHeader>
-          <TableRow className="bg-grey-100">
-            <TableHead className="w-[50px]">Prop</TableHead>
-            <TableHead className="w-[50px]">Type</TableHead>
-            <TableHead className="w-[250px]">Description</TableHead>
-            <TableHead className="w-[50px]">Default</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {DocComponentProps.props.map((prop) => (
-            <TableRow key={prop.prop}>
-              <TableCell>{prop.prop}</TableCell>
-              <TableCell>{prop.type ? prop.type : "-"}</TableCell>
-              <TableCell>{prop.description ? prop.description : "-"}</TableCell>
-              <TableCell>{prop.default ? prop.default : "-"}</TableCell>
+      {DocComponentProps.props.length > 0 && (
+        <Table className="mt-5">
+          <TableHeader>
+            <TableRow className="bg-grey-100">
+              <TableHead className="w-[50px]">Prop</TableHead>
+              <TableHead className="w-[50px]">Type</TableHead>
+              <TableHead className="w-[250px]">Description</TableHead>
+              <TableHead className="w-[50px]">Default</TableHead>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHeader>
+          <TableBody>
+            {DocComponentProps.props.map((prop) => (
+              <TableRow key={prop.prop}>
+                <TableCell>{prop.prop}</TableCell>
+                <TableCell>{prop.type ? prop.type : "-"}</TableCell>
+                <TableCell>
+                  {prop.description ? prop.description : "-"}
+                </TableCell>
+                <TableCell>{prop.default ? prop.default : "-"}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      )}
     </>
   );
 };

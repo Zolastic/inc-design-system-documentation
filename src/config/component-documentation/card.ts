@@ -92,19 +92,19 @@ import React from "react";
 const CardDemo = () => {
 return (
     <Card size="custom-size" className="w=[300px]">
-    <CardHeader>
-        <CardTitle>Create Evaluation Project</CardTitle>
-        <CardDescription>
-        Create an Evaluation Project for Jumbo Seafood
-        </CardDescription>
-    </CardHeader>
-    <CardContent className="space-y-1">
-        <h1>Project Name:</h1>
-        <Input placeholder="Project Name" />
-    </CardContent>
-    <CardFooter>
-        <Button>Submit</Button>
-    </CardFooter>
+      <CardHeader>
+          <CardTitle>Create Evaluation Project</CardTitle>
+          <CardDescription>
+          Create an Evaluation Project for Jumbo Seafood
+          </CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-1">
+          <h1>Project Name:</h1>
+          <Input placeholder="Project Name" />
+      </CardContent>
+      <CardFooter>
+          <Button>Submit</Button>
+      </CardFooter>
     </Card>
 );
 };

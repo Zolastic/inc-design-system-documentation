@@ -22,6 +22,7 @@ import modalComponentDocumentation from "./component-documentation/modal";
 import alertModalComponentDocumentation from "./component-documentation/alert-modal";
 import badgeComponentDocumentation from "./component-documentation/badge";
 import cardComponentDocumentation from "./component-documentation/card";
+import hoverCardComponentDocumentation from "./component-documentation/hover-card";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -36,6 +37,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   datePickerComponentDocumentation,
   defaultListComponentDocumentation,
   fileUploadComponentDocumentation,
+  hoverCardComponentDocumentation,
   inputComponentDocumentation,
   modalComponentDocumentation,
   multiSelectComponentDocumentation,

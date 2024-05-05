@@ -108,37 +108,37 @@ const modalComponentDocumentation: DocComponentDocumentation = {
     "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. This modal is not disruptive, clicking anywhere outside the modal will close the modal.",
   previewCode: `import { Button } from "inc-design-system/button";
 import {
-Modal,
-ModalCloser,
-ModalContent,
-ModalTrigger,
+  Modal,
+  ModalCloser,
+  ModalContent,
+  ModalTrigger,
 } from "inc-design-system/modal";
 import { Textarea } from "inc-design-system/textarea";
 import React from "react";
 
 const ModalDemo = () => {
-return (
+  return (
     <Modal>
-    <ModalTrigger>
+      <ModalTrigger>
         <Button variant="dashed">Open Modal</Button>
-    </ModalTrigger>
-    <ModalContent
+      </ModalTrigger>
+      <ModalContent
         status="info"
         title="Feedback"
         description="Share your thoughts with us!"
         className="w-96"
         closable
-    >
+      >
         <div className="text-text-default">
-        <h1 className="mb-1">What is your feedback?</h1>
-        <Textarea />
+          <h1 className="mb-1">What is your feedback?</h1>
+          <Textarea />
         </div>
         <ModalCloser className="mt-4">
-        <Button variant="primary">Confirm</Button>
+          <Button variant="primary">Confirm</Button>
         </ModalCloser>
-    </ModalContent>
+      </ModalContent>
     </Modal>
-);
+  );
 };
 
 export default ModalDemo;`,
