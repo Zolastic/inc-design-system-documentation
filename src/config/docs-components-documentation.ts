@@ -24,11 +24,13 @@ import badgeComponentDocumentation from "./component-documentation/badge";
 import cardComponentDocumentation from "./component-documentation/card";
 import hoverCardComponentDocumentation from "./component-documentation/hover-card";
 import timePickerComponentDocumentation from "./component-documentation/time-picker";
+import avatarComponentDocumentation from "./component-documentation/avatar";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
   alertModalComponentDocumentation,
   alertComponentDocumentation,
+  avatarComponentDocumentation,
   badgeComponentDocumentation,
   buttonComponentDocumentation,
   calendarComponentDocumentation,
