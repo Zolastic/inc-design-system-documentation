@@ -160,6 +160,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/components/textarea",
         items: [],
       },
+      {
+        title: "Time Picker",
+        href: "/docs/components/time-picker",
+        items: [],
+      },
     ],
   },
   {
