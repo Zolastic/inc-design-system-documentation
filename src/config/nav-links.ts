@@ -101,6 +101,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Hover Card",
+        href: "/docs/components/hover-card",
+        items: [],
+      },
+      {
         title: "Input",
         href: "/docs/components/input",
         items: [],
