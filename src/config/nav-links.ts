@@ -56,6 +56,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Badge",
+        href: "/docs/components/badge",
+        items: [],
+      },
+      {
         title: "Button",
         href: "/docs/components/button",
         items: [],
