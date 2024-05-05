@@ -23,6 +23,7 @@ import alertModalComponentDocumentation from "./component-documentation/alert-mo
 import badgeComponentDocumentation from "./component-documentation/badge";
 import cardComponentDocumentation from "./component-documentation/card";
 import hoverCardComponentDocumentation from "./component-documentation/hover-card";
+import timePickerComponentDocumentation from "./component-documentation/time-picker";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -49,6 +50,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   switchComponentDocumentation,
   tagComponentDocumentation,
   textareaComponentDocumentation,
+  timePickerComponentDocumentation,
 ];
 
 export { docComponentsDocumentation };
