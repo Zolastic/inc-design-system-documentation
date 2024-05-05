@@ -63,7 +63,7 @@ const timePickerComponentDocumentation: DocComponentDocumentation = {
   url: "time-picker",
   componentTitle: "Time Picker",
   componentDescription:
-    "A time picker component that allows users to select a time.",
+    "By clicking the input box, you can select a time from a popup panel.",
   previewCode: `import { TimePicker } from "inc-design-system/timePicker";
 import React from "react";
 
