@@ -19,9 +19,11 @@ import popoverComponentDocumentation from "./component-documentation/popover";
 import paginatedListComponentDocumentation from "./component-documentation/paginated-list";
 import rangeDatePickerComponentDocumentation from "./component-documentation/range-date-picker";
 import modalComponentDocumentation from "./component-documentation/modal";
+import alertModalComponentDocumentation from "./component-documentation/alert-modal";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
+  alertModalComponentDocumentation,
   alertComponentDocumentation,
   buttonComponentDocumentation,
   calendarComponentDocumentation,
