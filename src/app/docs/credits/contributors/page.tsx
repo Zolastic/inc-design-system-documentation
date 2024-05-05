@@ -1,3 +1,4 @@
+import GitHubLinkButton from "@/components/github-link-button";
 import { contributors } from "@/config/contributors";
 import Link from "next/link";
 import React from "react";
@@ -9,8 +10,8 @@ const Page = () => {
         Contributors
       </h1>
       <p className="text-lg text-text-default/60 max-w-[750px] mt-2">
-        A list of contributors who have helped shape the INC Design System.
-        (Alphabetical order)
+        A list of individuals who have played a significant role in shaping the
+        INC Design System. (Alphabetical order)
       </p>
 
       <div className="flex flex-col mt-4">
@@ -27,9 +28,16 @@ const Page = () => {
           </div>
         ))}
         <p className="text-lg text-text-default/60 mt-8">
-          A big thank you to all the contributors who have helped shape the INC
-          Design System.
+          A heartfelt thank you to everyone who has made valuable additions to
+          the INC Design System! 🎉💖🤩
         </p>
+      </div>
+      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-start mt-4 space-y-4 lg:space-x-4 lg:space-y-0">
+        <GitHubLinkButton buttonText="Package source code" />
+        <GitHubLinkButton
+          buttonText="Documentation source code"
+          link="https://github.com/Zolastic/inc-design-system-documentation"
+        />
       </div>
     </>
   );
