@@ -1,3 +1,4 @@
+import GitHubComponentLibraryButton from "@/components/github-component-library-button";
 import { siteConfig } from "@/config/site";
 import { Button } from "inc-design-system/button";
 import { Github } from "lucide-react";
@@ -21,12 +22,7 @@ export default function Home() {
         <Link href="/docs">
           <Button variant="secondary">Get Started!</Button>
         </Link>
-        <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-          <Button className="flex justify-center items-center space-x-2 bg-grey-700 hover:bg-grey-600">
-            <Github />
-            <span>GitHub</span>
-          </Button>
-        </Link>
+        <GitHubComponentLibraryButton />
       </div>
     </main>
   );
