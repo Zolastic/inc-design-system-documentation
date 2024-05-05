@@ -20,11 +20,13 @@ import paginatedListComponentDocumentation from "./component-documentation/pagin
 import rangeDatePickerComponentDocumentation from "./component-documentation/range-date-picker";
 import modalComponentDocumentation from "./component-documentation/modal";
 import alertModalComponentDocumentation from "./component-documentation/alert-modal";
+import badgeComponentDocumentation from "./component-documentation/badge";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
   alertModalComponentDocumentation,
   alertComponentDocumentation,
+  badgeComponentDocumentation,
   buttonComponentDocumentation,
   calendarComponentDocumentation,
   checkableTagComponentDocumentation,
