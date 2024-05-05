@@ -1,7 +1,5 @@
-import GitHubComponentLibraryButton from "@/components/github-component-library-button";
-import { siteConfig } from "@/config/site";
+import GitHubLinkButton from "@/components/github-link-button";
 import { Button } from "inc-design-system/button";
-import { Github } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
         <Link href="/docs">
           <Button variant="secondary">Get Started!</Button>
         </Link>
-        <GitHubComponentLibraryButton />
+        <GitHubLinkButton />
       </div>
     </main>
   );

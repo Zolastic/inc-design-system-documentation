@@ -1,4 +1,4 @@
-import GitHubComponentLibraryButton from "@/components/github-component-library-button";
+import GitHubLinkButton from "@/components/github-link-button";
 import { Button } from "inc-design-system/button";
 import { Component, Download, Package } from "lucide-react";
 import Link from "next/link";
@@ -29,7 +29,7 @@ const Page = () => {
             <Package size={16} />
           </Button>
         </Link>
-        <GitHubComponentLibraryButton buttonText="Package source code" />
+        <GitHubLinkButton buttonText="Package source code" />
         <Link href="/docs/installation">
           <Button
             variant="primary"

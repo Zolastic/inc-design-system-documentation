@@ -1,3 +1,4 @@
+import GitHubLinkButton from "@/components/github-link-button";
 import { contributors } from "@/config/contributors";
 import Link from "next/link";
 import React from "react";
@@ -30,6 +31,13 @@ const Page = () => {
           A big thank you to all the contributors who have helped shape the INC
           Design System.
         </p>
+      </div>
+      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-start mt-4 space-y-4 lg:space-x-4 lg:space-y-0">
+        <GitHubLinkButton buttonText="Package source code" />
+        <GitHubLinkButton
+          buttonText="Documentation source code"
+          link="https://github.com/Zolastic/inc-design-system-documentation"
+        />
       </div>
     </>
   );

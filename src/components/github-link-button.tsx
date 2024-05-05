@@ -4,19 +4,21 @@ import { Github } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-type GitHubComponentLibraryButtonProps = {
+type GitHubLinkButtonProps = {
   buttonClassName?: string;
   buttonVariant?: "primary" | "secondary" | "dashed" | "link" | "text";
   buttonText?: string;
+  link?: string;
 };
 
-const GitHubComponentLibraryButton = ({
+const GitHubLinkButton = ({
   buttonClassName,
   buttonVariant = "primary",
   buttonText = "GitHub",
-}: GitHubComponentLibraryButtonProps) => {
+  link = siteConfig.links.github,
+}: GitHubLinkButtonProps) => {
   return (
-    <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
+    <Link href={link} target="_blank" rel="noreferrer">
       <Button
         variant={buttonVariant}
         className={
@@ -31,4 +33,4 @@ const GitHubComponentLibraryButton = ({
   );
 };
 
-export default GitHubComponentLibraryButton;
+export default GitHubLinkButton;
