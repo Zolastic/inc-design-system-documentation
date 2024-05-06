@@ -1,5 +1,6 @@
 import GitHubLinkButton from "@/components/github-link-button";
 import { contributors } from "@/config/contributors";
+import { Avatar, AvatarFallback, AvatarImage } from "inc-design-system/avatar";
 import Link from "next/link";
 import React from "react";
 
@@ -19,7 +20,27 @@ const Page = () => {
           <div key={index} className="flex items-center space-x-4 mt-4">
             <Link
               href={contributor.github}
+              className="flex items-center space-x-4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Avatar>
+                <AvatarImage
+                  src={`${contributor.github}.png`}
+                  alt="userProfile"
+                />
+                <AvatarFallback>
+                  {contributor.fallback
+                    ? contributor.fallback
+                    : contributor.name.charAt(0)}
+                </AvatarFallback>
+              </Avatar>
+            </Link>
+            <Link
+              href={contributor.github}
               className="underline underline-offset-4"
+              target="_blank"
+              rel="noreferrer"
             >
               <h3 className="leading-none text-text-default font-medium">
                 {contributor.name}
