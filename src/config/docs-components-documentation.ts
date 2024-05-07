@@ -25,6 +25,7 @@ import cardComponentDocumentation from "./component-documentation/card";
 import hoverCardComponentDocumentation from "./component-documentation/hover-card";
 import timePickerComponentDocumentation from "./component-documentation/time-picker";
 import avatarComponentDocumentation from "./component-documentation/avatar";
+import tableComponentDocumentation from "./component-documentation/table";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -50,6 +51,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   rangeDatePickerComponentDocumentation,
   selectComponentDocumentation,
   switchComponentDocumentation,
+  tableComponentDocumentation,
   tagComponentDocumentation,
   textareaComponentDocumentation,
   timePickerComponentDocumentation,

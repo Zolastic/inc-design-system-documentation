@@ -156,6 +156,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Table",
+        href: "/docs/components/table",
+        items: [],
+      },
+      {
         title: "Tag",
         href: "/docs/components/tag",
         items: [],
