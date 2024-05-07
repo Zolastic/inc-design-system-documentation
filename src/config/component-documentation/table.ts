@@ -101,7 +101,7 @@ const TableDemo = () => {
     );
 };
   
-  export default TableDemo;`,
+export default TableDemo;`,
   previewComponent: TableDemo,
   usageCodeImport: `import {
 Table,
