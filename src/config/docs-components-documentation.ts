@@ -26,6 +26,7 @@ import hoverCardComponentDocumentation from "./component-documentation/hover-car
 import timePickerComponentDocumentation from "./component-documentation/time-picker";
 import avatarComponentDocumentation from "./component-documentation/avatar";
 import tableComponentDocumentation from "./component-documentation/table";
+import toastComponentDocumentation from "./component-documentation/toast";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -55,6 +56,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   tagComponentDocumentation,
   textareaComponentDocumentation,
   timePickerComponentDocumentation,
+  toastComponentDocumentation,
 ];
 
 export { docComponentsDocumentation };
