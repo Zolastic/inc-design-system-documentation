@@ -175,6 +175,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         href: "/docs/components/time-picker",
         items: [],
       },
+      {
+        title: "Toast",
+        href: "/docs/components/toast",
+        items: [],
+      },
     ],
   },
   {
