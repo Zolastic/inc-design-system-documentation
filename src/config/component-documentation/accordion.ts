@@ -7,6 +7,12 @@ import {
 const accordionProps: DocComponentProp[] = [
   {
     component: "Accordion",
+    links: [
+      {
+        title: "API Reference",
+        url: "https://www.radix-ui.com/primitives/docs/components/accordion#root",
+      },
+    ],
     props: [
       {
         prop: "single",
@@ -22,14 +28,77 @@ const accordionProps: DocComponentProp[] = [
         default: "false",
       },
       {
-        prop: "headers",
-        type: "string[]",
-        description: "Array of headers that should match the children.",
+        prop: "children",
+        type: "React.ReactNode",
+        description: "Children that are passed.",
       },
+    ],
+  },
+  {
+    component: "AccordionItem",
+    links: [
+      {
+        title: "API Reference",
+        url: "https://www.radix-ui.com/primitives/docs/components/accordion#item",
+      },
+    ],
+    props: [
       {
         prop: "children",
         type: "React.ReactNode",
         description: "Children that are passed.",
+      },
+      {
+        prop: "className",
+        type: "string",
+        description: "Classname that is passed.",
+      },
+      {
+        prop: "value",
+        type: "string",
+        description: "Value that is passed.",
+      },
+    ],
+  },
+  {
+    component: "AccordionTrigger",
+    links: [
+      {
+        title: "API Reference",
+        url: "https://www.radix-ui.com/primitives/docs/components/accordion#trigger",
+      },
+    ],
+    props: [
+      {
+        prop: "children",
+        type: "React.ReactNode",
+        description: "Children that are passed.",
+      },
+      {
+        prop: "className",
+        type: "string",
+        description: "Classname that is passed.",
+      },
+    ],
+  },
+  {
+    component: "AccordionContent",
+    links: [
+      {
+        title: "API Reference",
+        url: "https://www.radix-ui.com/primitives/docs/components/accordion#content",
+      },
+    ],
+    props: [
+      {
+        prop: "children",
+        type: "React.ReactNode",
+        description: "Children that are passed.",
+      },
+      {
+        prop: "className",
+        type: "string",
+        description: "Classname that is passed.",
       },
     ],
   },
@@ -40,47 +109,69 @@ const accordionComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Accordion",
   componentDescription:
     "A vertically stacked set of interactive headings that each reveal a section of content.",
-  previewCode: `import Accordion from "inc-design-system/accordion";
+  previewCode: `import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "inc-design-system/accordion";
 import React from "react";
 
 const AccordionDemo = () => {
-  const headers: string[] = ["Header 1"];
-
-  const data = Array.from({ length: 1 }, (_, i) => ({
-    header: \`accordion \${i + 1}\`,
-    item: \`content-\${i + 1}\`,
-  }));
+  type data = {
+    header: string;
+    content: string;
+  };
+  const accordionData: data[] = [
+    {
+      header: "Header 1",
+      content:
+        "Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,",
+    },
+    {
+      header: "Header 2",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nisl tincidunt tincidunt",
+    },
+    {
+      header: "Header 3",
+      content: "This is some dummy content",
+    },
+  ];
 
   return (
-    <Accordion headers={headers}>
-      {data.map((item, index) => {
-        return (
-          <div key={index}>
-            <div>
-              <h1 className="text-lg font-bold">{item.header}</h1>
-              <p>{item.item}</p>
-            </div>
-          </div>
-        );
-      })}
+    <Accordion>
+      {accordionData.map((item, index) => (
+        <AccordionItem key={index} value={index.toString()}>
+          <AccordionTrigger>
+            <h1 className="text-lg font-bold">{item.header}</h1>
+          </AccordionTrigger>
+          <AccordionContent>
+            <p>{item.content} </p>
+          </AccordionContent>
+        </AccordionItem>
+      ))}
     </Accordion>
   );
 };
 
 export default AccordionDemo;`,
   previewComponent: AccordionDemo,
-  usageCodeImport: `import Accordion from "inc-design-system/accordion";`,
-  usageCode: `<Accordion headers={headers}>
-  {data.map((item, index) => {
-    return (
-      <div key={index}>
-        <div>
-          <h1 className="text-lg font-bold">{item.header}</h1>
-          <p>{item.item}</p>
-        </div>
-      </div>
-    );
-  })}
+  usageCodeImport: `import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "inc-design-system/accordion";`,
+  usageCode: `<Accordion>
+  <AccordionItem value="contentOne">
+    <AccordionTrigger>
+      <h1 className="text-lg font-bold">Open Accordion</h1>
+    </AccordionTrigger>
+    <AccordionContent>
+      <p>Content 1</p>
+    </AccordionContent>
+  </AccordionItem>
 </Accordion>`,
   props: accordionProps,
 };
