@@ -151,6 +151,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Sheet",
+        href: "/docs/components/sheet",
+        items: [],
+      },
+      {
         title: "Switch",
         href: "/docs/components/switch",
         items: [],

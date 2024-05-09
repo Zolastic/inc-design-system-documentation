@@ -27,6 +27,7 @@ import timePickerComponentDocumentation from "./component-documentation/time-pic
 import avatarComponentDocumentation from "./component-documentation/avatar";
 import tableComponentDocumentation from "./component-documentation/table";
 import toastComponentDocumentation from "./component-documentation/toast";
+import sheetComponentDocumentation from "./component-documentation/sheet";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -51,6 +52,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   radioComponentDocumentation,
   rangeDatePickerComponentDocumentation,
   selectComponentDocumentation,
+  sheetComponentDocumentation,
   switchComponentDocumentation,
   tableComponentDocumentation,
   tagComponentDocumentation,
