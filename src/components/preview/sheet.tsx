@@ -36,7 +36,7 @@ const SheetDemo = () => {
               <CardTitle>What is Mission, Vision and Values?</CardTitle>
               <CardDescription>
                 Learn about the importance of Mission, Vision and Values and how
-                it can help your organization.
+                it can help your organisation.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-1">
