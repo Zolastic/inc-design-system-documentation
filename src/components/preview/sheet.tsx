@@ -42,7 +42,8 @@ const SheetDemo = () => {
             <CardContent className="space-y-1">
               <Link
                 href="https://courses.lumenlearning.com/wm-principlesofmanagement/chapter/reading-mission-vision-and-values/"
-                passHref
+                target="_blank"
+                rel="noreferrer"
               >
                 <Button as="a" variant="primary" size="sm">
                   Learn More
