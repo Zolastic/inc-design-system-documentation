@@ -27,7 +27,7 @@ const radioGroupProps: DocComponentProp[] = [
       },
       {
         prop: "onValueChange",
-        type: "() => void",
+        type: "(value: string) => void",
         description:
           "Callback when the value of the radio group changes. No default value.",
       },
