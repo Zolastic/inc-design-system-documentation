@@ -5,6 +5,7 @@ import {
   AlertModalContent,
   AlertModalAction,
   AlertModalCancel,
+  AlertModalTitle,
 } from "inc-design-system/alertModal";
 import { Button } from "inc-design-system/button";
 
@@ -16,13 +17,14 @@ const AlertModalDemo = () => {
           Delete Project
         </Button>
       </AlertModalTrigger>
-      <AlertModalContent
-        status="warning"
-        title="Are you sure you want to delete Evaluation Project #2?"
-        description="This action cannot be undone."
-        className="w-96"
-      >
-        <AlertModalCancel className="mt-4 mr-2">
+      <AlertModalContent className="w-96">
+        <AlertModalTitle
+          status="warning"
+          description="This action cannot be undone."
+        >
+          Are you sure you want to delete this project?
+        </AlertModalTitle>
+        <AlertModalCancel className="mr-2 mt-4">
           <Button variant="primary">Cancel</Button>
         </AlertModalCancel>
 
