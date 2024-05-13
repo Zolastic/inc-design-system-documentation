@@ -47,10 +47,32 @@ const modalProps: DocComponentProp[] = [
         description: "Customizable content to display in the modal.",
       },
       {
-        prop: "title",
+        prop: "className",
         type: "string",
         description:
-          "Optional. Shown as big bolded words at the top left corner of the modal.",
+          "Optional. Extra Tailwind styles for the overall modal content.",
+      },
+      {
+        prop: "closable",
+        type: "boolean",
+        description:
+          "Optional. Shows an 'X' at the opposite end of the title to close the modal.",
+      },
+    ],
+  },
+  {
+    component: "ModalTitle",
+    props: [
+      {
+        prop: "children",
+        type: "React.ReactNode",
+        description: "Content to be displayed as the title.",
+      },
+      {
+        prop: "status",
+        type: '"success" | "error" | "warning" | "info"',
+        description:
+          "Optional. Shows predefined icons for the chosen status, positioned next to the title.",
       },
       {
         prop: "description",
@@ -61,20 +83,7 @@ const modalProps: DocComponentProp[] = [
       {
         prop: "className",
         type: "string",
-        description:
-          "Optional. Extra Tailwind styles for the overall modal content.",
-      },
-      {
-        prop: "status",
-        type: '"success" | "error" | "warning" | "info"',
-        description:
-          "Optional. Shows predefined icons for the chosen status, positioned next to the title.",
-      },
-      {
-        prop: "closable",
-        type: "boolean",
-        description:
-          "Optional. Shows an 'X' at the opposite end of the title to close the modal.",
+        description: "Optional. Additional classNames to customize the title.",
       },
     ],
   },
@@ -111,6 +120,7 @@ import {
   Modal,
   ModalCloser,
   ModalContent,
+  ModalTitle,
   ModalTrigger,
 } from "inc-design-system/modal";
 import { Textarea } from "inc-design-system/textarea";
@@ -120,15 +130,12 @@ const ModalDemo = () => {
   return (
     <Modal>
       <ModalTrigger>
-        <Button variant="dashed">Open Modal</Button>
+        <Button>Open Modal</Button>
       </ModalTrigger>
-      <ModalContent
-        status="info"
-        title="Feedback"
-        description="Share your thoughts with us!"
-        className="w-96"
-        closable
-      >
+      <ModalContent className="w-96" closable>
+        <ModalTitle status="info" description="Share your thoughts with us!">
+          Feedback
+        </ModalTitle>
         <div className="text-text-default">
           <h1 className="mb-1">What is your feedback?</h1>
           <Textarea />
@@ -144,21 +151,20 @@ const ModalDemo = () => {
 export default ModalDemo;`,
   previewComponent: ModalDemo,
   usageCodeImport: `import {
-Modal,
-ModalCloser,
-ModalContent,
-ModalTrigger,
+  Modal,
+  ModalCloser,
+  ModalContent,
+  ModalTitle,
+  ModalTrigger,
 } from "inc-design-system/modal";`,
   usageCode: `<Modal>
   <ModalTrigger>
-    <Button variant="dashed">Open Modal</Button>
+    <Button>Open Modal</Button>
   </ModalTrigger>
-  <ModalContent
-    status="info"
-    title="This is a title text"
-    description="This is some description"
-    closable
-  >
+  <ModalContent closable>
+    <ModalTitle status="info" description="This is some description">
+      Title
+    </ModalTitle>
     <div className="text-text-default">Content</div>
     <ModalCloser className="mt-4">
       <Button variant="primary">Confirm</Button>

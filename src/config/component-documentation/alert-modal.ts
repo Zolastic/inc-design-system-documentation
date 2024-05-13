@@ -46,29 +46,33 @@ const alertModalProps: DocComponentProp[] = [
         type: "React.ReactNode",
         description: "Customizable content to display in the modal.",
       },
-      {
-        prop: "title",
-        type: "string",
-        description:
-          "Optional. Shown as big bolded words at the top left corner of the modal.",
-      },
-      {
-        prop: "description",
-        type: "string",
-        description:
-          "Optional. Shown as small slightly greyed out words below the title.",
-      },
+
       {
         prop: "className",
         type: "string",
         description:
           "Optional. Extra Tailwind styles for the overall modal content.",
       },
+    ],
+  },
+  {
+    component: "AlertModalTitle",
+    props: [
+      {
+        prop: "children",
+        type: "React.ReactNode",
+        description: "Title of the modal.",
+      },
       {
         prop: "status",
-        type: '"success" | "error" | "warning" | "info"',
+        type: "string",
         description:
-          "Optional. Shows predefined icons for the chosen status, positioned next to the title.",
+          "Optional. Status of the modal title. Can be 'warning', 'error', 'success', 'info'.",
+      },
+      {
+        prop: "description",
+        type: "string",
+        description: "Optional. Description of the modal title.",
       },
     ],
   },
@@ -124,60 +128,64 @@ const alertModalComponentDocumentation: DocComponentDocumentation = {
     "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. This modal is disruptive, clicking anywhere outside the modal will not close the modal",
   previewCode: `import React from "react";
 import {
-AlertModal,
-AlertModalTrigger,
-AlertModalContent,
-AlertModalAction,
-AlertModalCancel,
+  AlertModal,
+  AlertModalTrigger,
+  AlertModalContent,
+  AlertModalAction,
+  AlertModalCancel,
+  AlertModalTitle,
 } from "inc-design-system/alertModal";
 import { Button } from "inc-design-system/button";
 
 const AlertModalDemo = () => {
-return (
+  return (
     <AlertModal>
       <AlertModalTrigger>
-          <Button variant="primary" className="bg-danger hover:bg-danger/80">
+        <Button variant="primary" className="bg-danger hover:bg-danger/80">
           Delete Project
-          </Button>
+        </Button>
       </AlertModalTrigger>
-      <AlertModalContent
+      <AlertModalContent className="w-96">
+        <AlertModalTitle
           status="warning"
-          title="Are you sure you want to delete Evaluation Project #2?"
           description="This action cannot be undone."
-          className="w-96"
-      >
-          <AlertModalCancel className="mt-4 mr-2">
+        >
+          Are you sure you want to delete this project?
+        </AlertModalTitle>
+        <AlertModalCancel className="mr-2 mt-4">
           <Button variant="primary">Cancel</Button>
-          </AlertModalCancel>
+        </AlertModalCancel>
 
-          <AlertModalAction>
+        <AlertModalAction>
           <Button variant="secondary">Confirm</Button>
-          </AlertModalAction>
+        </AlertModalAction>
       </AlertModalContent>
     </AlertModal>
-);
+  );
 };
 
 export default AlertModalDemo;`,
   previewComponent: AlertModalDemo,
   usageCodeImport: `import {
-AlertModal,
-AlertModalTrigger,
-AlertModalContent,
-AlertModalAction,
-AlertModalCancel,
+  AlertModal,
+  AlertModalTrigger,
+  AlertModalContent,
+  AlertModalAction,
+  AlertModalCancel,
+  AlertModalTitle,
 } from "inc-design-system/alertModal";`,
   usageCode: `<AlertModal>
   <AlertModalTrigger>
-    <Button variant="primary">Open Modal</Button>
+    <Button>Open Modal</Button>
   </AlertModalTrigger>
-  <AlertModalContent
-    status="info"
-    title="Title"
-    description="Description of the modal content."
-    className="w-96"
-  >
-    <AlertModalCancel className="mt-4 mr-2">
+  <AlertModalContent className="w-96">
+    <AlertModalTitle
+      status="warning"
+      description="Description of the modal content."
+    >
+      Title
+    </AlertModalTitle>
+    <AlertModalCancel className="mr-2 mt-4">
       <Button variant="primary">Cancel</Button>
     </AlertModalCancel>
 

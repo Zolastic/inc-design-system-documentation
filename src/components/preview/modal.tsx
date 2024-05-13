@@ -3,6 +3,7 @@ import {
   Modal,
   ModalCloser,
   ModalContent,
+  ModalTitle,
   ModalTrigger,
 } from "inc-design-system/modal";
 import { Textarea } from "inc-design-system/textarea";
@@ -12,15 +13,12 @@ const ModalDemo = () => {
   return (
     <Modal>
       <ModalTrigger>
-        <Button variant="dashed">Open Modal</Button>
+        <Button>Open Modal</Button>
       </ModalTrigger>
-      <ModalContent
-        status="info"
-        title="Feedback"
-        description="Share your thoughts with us!"
-        className="w-96"
-        closable
-      >
+      <ModalContent className="w-96" closable>
+        <ModalTitle status="info" description="Share your thoughts with us!">
+          Feedback
+        </ModalTitle>
         <div className="text-text-default">
           <h1 className="mb-1">What is your feedback?</h1>
           <Textarea />
