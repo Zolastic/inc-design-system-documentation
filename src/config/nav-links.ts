@@ -151,6 +151,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Result Page",
+        href: "/docs/components/result-page",
+        items: [],
+      },
+      {
         title: "Select",
         href: "/docs/components/select",
         items: [],
