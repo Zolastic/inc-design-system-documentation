@@ -1,8 +1,7 @@
-import { Textarea } from "inc-design-system/textarea";
-import React from "react";
+import { Textarea } from "inc-design-system/Textarea"
 
 const TextareaDemo = () => {
-  return <Textarea autosize={true} showCharCount maxLength={100} />;
-};
-
-export default TextareaDemo;
+	return (
+		<Textarea autosize={true} showCharCount maxLength={100} />
+	)
+}
