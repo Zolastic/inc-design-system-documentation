@@ -136,6 +136,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Progress",
+        href: "/docs/components/progress",
+        items: [],
+      },
+      {
         title: "Radio Group",
         href: "/docs/components/radio-group",
         items: [],
