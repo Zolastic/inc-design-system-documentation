@@ -19,46 +19,41 @@ const progressProps: DocComponentProp[] = [
         prop: "isSuccess",
         type: "boolean",
         description:
-          "If true, the progress bar will be styled with the success variant.",
+          "Optional. If true, the progress bar will be styled with the success variant.",
       },
       {
         prop: "isError",
         type: "boolean",
         description:
-          "If true, the progress bar will be styled with the error variant.",
+          "Optional. If true, the progress bar will be styled with the error variant.",
       },
       {
         prop: "variant",
         type: '"default" | "isError" | "isSuccess"',
         description:
-          "Specifies the variant of the progress bar. Overrides isSuccess and isError props.",
+          "Optional. Specifies the variant of the progress bar. Overrides isSuccess and isError props.",
       },
       {
         prop: "showValueInfo",
         type: "boolean",
         description:
-          "If true, the current progress value will be displayed in the center of the progress bar.",
+          "Optional. If true, the current progress value will be displayed in the center of the progress bar.",
       },
       {
         prop: "isCircle",
         type: "boolean",
         description:
-          "If true, the progress bar will be circular instead of linear.",
+          "Optional. If true, the progress bar will be circular instead of linear.",
       },
       {
         prop: "className",
         type: "string",
-        description: "Additional class names to apply to the progress bar.",
+        description: "Optional. Additional class names to apply to the progress bar.",
       },
       {
         prop: "value",
         type: "number",
-        description: "The current value of the progress bar.",
-      },
-      {
-        prop: "...props",
-        type: "React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>",
-        description: "Additional props to pass to the progress bar component.",
+        description: "Optional. The current value of the progress bar.",
       },
     ],
   },
