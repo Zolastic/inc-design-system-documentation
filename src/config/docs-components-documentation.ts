@@ -28,6 +28,8 @@ import avatarComponentDocumentation from "./component-documentation/avatar";
 import tableComponentDocumentation from "./component-documentation/table";
 import toastComponentDocumentation from "./component-documentation/toast";
 import sheetComponentDocumentation from "./component-documentation/sheet";
+import progressComponentDocumentation from "./component-documentation/progress";
+import resultPageComponentDocumentation from "./component-documentation/result-page";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -49,8 +51,10 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   multiSelectComponentDocumentation,
   paginatedListComponentDocumentation,
   popoverComponentDocumentation,
+  progressComponentDocumentation,
   radioComponentDocumentation,
   rangeDatePickerComponentDocumentation,
+  resultPageComponentDocumentation,
   selectComponentDocumentation,
   sheetComponentDocumentation,
   switchComponentDocumentation,
