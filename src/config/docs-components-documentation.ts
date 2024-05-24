@@ -30,6 +30,7 @@ import toastComponentDocumentation from "./component-documentation/toast";
 import sheetComponentDocumentation from "./component-documentation/sheet";
 import progressComponentDocumentation from "./component-documentation/progress";
 import resultPageComponentDocumentation from "./component-documentation/result-page";
+import indicatorComponentDocumentation from "./component-documentation/indicator";
 
 const docComponentsDocumentation: DocComponentDocumentation[] = [
   accordionComponentDocumentation,
@@ -46,6 +47,7 @@ const docComponentsDocumentation: DocComponentDocumentation[] = [
   defaultListComponentDocumentation,
   fileUploadComponentDocumentation,
   hoverCardComponentDocumentation,
+  indicatorComponentDocumentation,
   inputComponentDocumentation,
   modalComponentDocumentation,
   multiSelectComponentDocumentation,
