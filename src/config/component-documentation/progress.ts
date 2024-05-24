@@ -65,8 +65,8 @@ const progressProps: DocComponentProp[] = [
 ];
 
 const progressComponentDocumentation: DocComponentDocumentation = {
-  url: "progress-bar",
-  componentTitle: "Progress Bar",
+  url: "progress",
+  componentTitle: "Progress",
   componentDescription:
     "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   previewCode: `
