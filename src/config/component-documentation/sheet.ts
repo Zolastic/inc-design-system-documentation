@@ -147,24 +147,29 @@ const sheetComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Sheet",
   componentDescription:
     "A Sheet is a container that slides in from the side of the screen.",
-  previewCode: `import { Sheet, SheetContent, SheetTrigger, SheetClose } from "inc-design-system/sheet";
-
-  const SheetDemo = () => {
-    <div className="flex flex-col items-center justify-start min-h-[100dvh]">
-      <Sheet>
-        <SheetTrigger>
-          <h1>Open Sheet</h1>
-        </SheetTrigger>
-        <SheetContent>
-          <h1>Hello World</h1>
+  previewCode: `import {
+    Sheet,
+    SheetContent,
+    SheetTrigger,
+    SheetClose,
+  } from "inc-design-system/sheet";
+  import React from "react";
   
-          <SheetClose>
-            Close Sheet
-          </SheetClose>
-        </SheetContent>
-      </Sheet>
-    </div>
-  }
+  const SheetDemo = () => {
+    return (
+      <div className="flex flex-col items-center justify-start min-h-[10dvh]">
+        <Sheet>
+          <SheetTrigger>
+            <h1>Open Sheet</h1>
+          </SheetTrigger>
+          <SheetContent>
+            <h1>Hello World</h1>
+            <SheetClose>Close Sheet</SheetClose>
+          </SheetContent>
+        </Sheet>
+      </div>
+    );
+  };
   
   export default SheetDemo;`,
   previewComponent: SheetDemo,
@@ -174,7 +179,7 @@ SheetClose,
 SheetContent,
 SheetTrigger,
 } from "inc-design-system/sheet";`,
-  usageCode: ` <Sheet>
+  usageCode: `<Sheet>
   <SheetTrigger>
     <h1>Open Sheet</h1>
   </SheetTrigger>
