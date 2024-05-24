@@ -111,6 +111,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Indicator",
+        href: "/docs/components/indicator",
+        items: [],
+      }, 
+      {
         title: "Input",
         href: "/docs/components/input",
         items: [],
