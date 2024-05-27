@@ -111,6 +111,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Indicator",
+        href: "/docs/components/indicator",
+        items: [],
+      }, 
+      {
         title: "Input",
         href: "/docs/components/input",
         items: [],
@@ -136,6 +141,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: "Progress",
+        href: "/docs/components/progress",
+        items: [],
+      },
+      {
         title: "Radio Group",
         href: "/docs/components/radio-group",
         items: [],
@@ -143,6 +153,11 @@ const docsSidebarLinks: SidebarNavItem[] = [
       {
         title: "Range Date Picker",
         href: "/docs/components/range-date-picker",
+        items: [],
+      },
+      {
+        title: "Result Page",
+        href: "/docs/components/result-page",
         items: [],
       },
       {

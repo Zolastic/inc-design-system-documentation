@@ -32,7 +32,7 @@ const sheetProps: DocComponentProp[] = [
         prop: "onOpenChange",
         type: "(open: boolean) => void",
         description:
-          "Event handler called when the open state of the sheet changes. Default is '-'.",
+          "Event handler called when the open state of the sheet changes.",
         default: "-",
       },
     ],
@@ -65,6 +65,13 @@ const sheetProps: DocComponentProp[] = [
     ],
     props: [
       {
+        prop: "overlayClassName",
+        type: "string",
+        description:
+          "The classname for the overlay of the sheet, in order to control the z-index if needed.",
+        default: "-",
+      },
+      {
         prop: "side",
         type: "'top' | 'bottom' | 'left' | 'right'",
         description:
@@ -82,35 +89,35 @@ const sheetProps: DocComponentProp[] = [
         prop: "onOpenAutoFocus",
         type: "(event: Event) => void",
         description:
-          "Event handler called when focus moves into the component after opening. It can be prevented by calling event.preventDefault. Default is '-'.",
+          "Event handler called when focus moves into the component after opening. It can be prevented by calling event.preventDefault.",
         default: "-",
       },
       {
         prop: "onCloseAutoFocus",
         type: "(event: Event) => void",
         description:
-          "Event handler called when focus moves to the trigger after closing. It can be prevented by calling event.preventDefault. Default is '-'.",
+          "Event handler called when focus moves to the trigger after closing. It can be prevented by calling event.preventDefault.",
         default: "-",
       },
       {
         prop: "onEscapeKeyDown",
         type: "(event: Event) => void",
         description:
-          "Event handler called when the escape key is down. It can be prevented by calling event.preventDefault. Default is '-'.",
+          "Event handler called when the escape key is down. It can be prevented by calling event.preventDefault.",
         default: "-",
       },
       {
         prop: "onPointerDownOutside",
         type: "(event: Event) => void",
         description:
-          "Event handler called when a pointer event occurs outside the bounds of the component. It can be prevented by calling event.preventDefault. Default is '-'.",
+          "Event handler called when a pointer event occurs outside the bounds of the component. It can be prevented by calling event.preventDefault.",
         default: "-",
       },
       {
         prop: "onInteractOutside",
         type: "(event: Event) => void",
         description:
-          "Event handler called when an interaction (pointer or focus event) happens outside the bounds of the component. It can be prevented by calling event.preventDefault. Default is '-'.",
+          "Event handler called when an interaction (pointer or focus event) happens outside the bounds of the component. It can be prevented by calling event.preventDefault.",
         default: "-",
       },
     ],
@@ -140,69 +147,31 @@ const sheetComponentDocumentation: DocComponentDocumentation = {
   componentTitle: "Sheet",
   componentDescription:
     "A Sheet is a container that slides in from the side of the screen.",
-  previewCode: `import { Button } from "inc-design-system/button";
-import {
-Card,
-CardContent,
-CardDescription,
-CardHeader,
-CardTitle,
-} from "inc-design-system/card";
-import {
-Sheet,
-SheetClose,
-SheetContent,
-SheetTrigger,
-} from "inc-design-system/sheet";
-import { Link as LinkIcon } from "lucide-react";
-import React from "react";
-import Link from "next/link";
-
-const SheetDemo = () => {
-return (
-    <Sheet>
-        <SheetTrigger>
-            <h1>
-            <Button>
-                <span className="text-base mr-1">Resources</span>
-                <LinkIcon size={16} />
-            </Button>
-            </h1>
-        </SheetTrigger>
-        <SheetContent className="flex flex-col items-start justify-between">
-            <div className="flex flex-col items-start">
-                <h1 className="text-xl font-bold">Resources</h1>
-
-                <Card size="custom-size" className="w-full mt-8">
-                    <CardHeader>
-                    <CardTitle>What is Mission, Vision and Values?</CardTitle>
-                    <CardDescription>
-                        Learn about the importance of Mission, Vision and Values and how
-                        it can help your organization.
-                    </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-1">
-                        <Link
-                            href="https://courses.lumenlearning.com/wm-principlesofmanagement/chapter/reading-mission-vision-and-values/"
-                            passHref
-                        >
-                            <Button as="a" variant="primary" size="sm">
-                            Learn More
-                            </Button>
-                        </Link>
-                    </CardContent>
-                </Card>
-            </div>
-
-            <SheetClose>
-            <Button>Close Sheet</Button>
-            </SheetClose>
-        </SheetContent>
-    </Sheet>
-);
-};
-
-export default SheetDemo;`,
+  previewCode: `import {
+    Sheet,
+    SheetContent,
+    SheetTrigger,
+    SheetClose,
+  } from "inc-design-system/sheet";
+  import React from "react";
+  
+  const SheetDemo = () => {
+    return (
+      <div className="flex flex-col items-center justify-start min-h-[10dvh]">
+        <Sheet>
+          <SheetTrigger>
+            <h1>Open Sheet</h1>
+          </SheetTrigger>
+          <SheetContent>
+            <h1>Hello World</h1>
+            <SheetClose>Close Sheet</SheetClose>
+          </SheetContent>
+        </Sheet>
+      </div>
+    );
+  };
+  
+  export default SheetDemo;`,
   previewComponent: SheetDemo,
   usageCodeImport: `import {
 Sheet,
@@ -214,10 +183,11 @@ SheetTrigger,
   <SheetTrigger>
     <h1>Open Sheet</h1>
   </SheetTrigger>
-  <SheetContent className="">
-    <h1>Hello World</h1>
-
-    <SheetClose>Close Sheet</SheetClose>
+  <SheetContent>
+    Content goes here
+    <SheetClose>
+      Close Sheet
+    </SheetClose>
   </SheetContent>
 </Sheet>`,
   props: sheetProps,

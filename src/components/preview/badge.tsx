@@ -1,31 +1,18 @@
-import Badge from "inc-design-system/badge";
-import { Bell } from "lucide-react";
 import React from "react";
+import Badge from "inc-design-system/badge";
 
 const BadgeDemo = () => {
   return (
-    <>
-      <Badge variant={"info"} count={1000}>
-        {/* to simulate an icon/ div */}
-        <div className="text-xl bg-gray-300 w-10 h-10 rounded flex justify-center items-center">
-          <Bell size={24} />
-        </div>
-      </Badge>
-
-      <Badge variant={"info"} dot>
-        {/* to simulate an icon/ div */}
-        <div className="text-xl bg-gray-300 w-10 h-10 rounded flex justify-center items-center">
-          <Bell size={24} />
-        </div>
-      </Badge>
-
-      <Badge processing>
-        {/* to simulate an icon/ div */}
-        <div className="text-xl bg-gray-300 w-10 h-10 rounded flex justify-center items-center">
-          <Bell size={24} />
-        </div>
-      </Badge>
-    </>
+    <div>
+      <Badge variant="primary">Primary</Badge>
+      <Badge variant="secondary">Secondary</Badge>
+      <Badge variant="success">Success</Badge>
+      <Badge variant="info">Info</Badge>
+      <Badge variant="warning">Warning</Badge>
+      <Badge variant="danger">Danger</Badge>
+      <Badge variant="translucent">Light</Badge>
+      <Badge variant="primaryAccent">Dark</Badge>
+    </div>
   );
 };
 

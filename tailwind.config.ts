@@ -57,6 +57,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("inc-design-system")],
+  plugins: [require("inc-design-system"), require("tailwindcss-animate")],
 };
 export default config;

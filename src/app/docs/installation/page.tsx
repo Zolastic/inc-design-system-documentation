@@ -5,7 +5,7 @@ import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 type Props = {};
 
 const Page = (props: Props) => {
-  const pluginCode = `plugins: [require("inc-design-system")]`;
+  const pluginCode = `plugins: [require("inc-design-system"), require("tailwindcss-animate")]`;
   const contentCode = `content: ["./node_modules/inc-design-system/dist/**/*.{js,ts,jsx,tsx}"]`;
   const importCode = `import {Alert} from "inc-design-system/alert"`;
 
@@ -36,7 +36,7 @@ const Page = (props: Props) => {
           </p>
           <div className="mt-4">
             <SyntaxHighlighter language="bash" style={github}>
-              npm install inc-design-system
+              npm install inc-design-system tailwindcss-animate
             </SyntaxHighlighter>
           </div>
           <h3 className="text-xl font-bold text-text-default mt-8">
