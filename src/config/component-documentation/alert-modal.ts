@@ -1,5 +1,3 @@
-
-
 import AlertModalDemo from "@/components/preview/alert-modal";
 import {
   DocComponentDocumentation,
@@ -48,12 +46,16 @@ const alertModalProps: DocComponentProp[] = [
         type: "React.ReactNode",
         description: "Customizable content to display in the modal.",
       },
-
       {
         prop: "className",
         type: "string",
         description:
           "Optional. Extra Tailwind styles for the overall modal content.",
+      },
+      {
+        prop: "overlayClassName",
+        type: "string",
+        description: "Optional. Extra Tailwind styles for the Modal overlay.",
       },
     ],
   },
