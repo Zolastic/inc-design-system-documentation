@@ -53,6 +53,12 @@ const modalProps: DocComponentProp[] = [
           "Optional. Extra Tailwind styles for the overall modal content.",
       },
       {
+        prop: "overlayClassName",
+        type: "string",
+        description:
+          "Optional. Extra Tailwind styles for the Modal overlay.",
+      },
+      {
         prop: "closable",
         type: "boolean",
         description:
