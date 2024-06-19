@@ -43,6 +43,13 @@ const buttonProps: DocComponentProp[] = [
         type: "(event: React.MouseEvent<HTMLButtonElement>) => void",
         description: "The function to call when the button is clicked.",
       },
+      {
+        prop: "isLoading",
+        type: "boolean",
+        description:
+          "When true, a loading spinner will be shown, and the button will be disabled.",
+        default: "false",
+      },
       // Other React.ButtonHTMLAttributes<HTMLButtonElement> props are inherited
       // Props like onClick, type, etc. are available but not documented here
     ],
