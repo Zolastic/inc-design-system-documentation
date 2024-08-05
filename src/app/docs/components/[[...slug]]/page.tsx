@@ -38,6 +38,7 @@ const Page = ({ params }: Props) => {
         <DocsComponentUsage
           usageCodeImport={component.usageCodeImport}
           usageCode={component.usageCode}
+          additionalCode={component.additionalCode}
         />
       </div>
       {component.props && (
