@@ -9,12 +9,6 @@ const cardProps: DocComponentProp[] = [
     component: "Card",
     props: [
       {
-        prop: "size",
-        type: '"small" | "medium" | "large" | string',
-        description:
-          "Size variant of the card. Possible values are 'small', 'medium', 'large', or any custom string. Default is 'medium'.",
-      },
-      {
         prop: "className",
         type: "string",
         description: "Additional class name for styling purposes.",
@@ -91,7 +85,7 @@ import React from "react";
 
 const CardDemo = () => {
 return (
-    <Card size="custom-size" className="w=[300px]">
+    <Card className="w=[300px]">
       <CardHeader>
           <CardTitle>Create Evaluation Project</CardTitle>
           <CardDescription>
@@ -119,7 +113,7 @@ CardFooter,
 CardHeader,
 CardTitle,
 } from "inc-design-system/card";`,
-  usageCode: `<Card size="custom-size" className="w=[300px]">
+  usageCode: `<Card className="w=[300px]">
   <CardHeader>
     <CardTitle>Card Title</CardTitle>
     <CardDescription>

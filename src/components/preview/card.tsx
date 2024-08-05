@@ -12,7 +12,7 @@ import React from "react";
 
 const CardDemo = () => {
   return (
-    <Card size="custom-size" className="w=[300px]">
+    <Card className="w=[300px]">
       <CardHeader>
         <CardTitle>Create Evaluation Project</CardTitle>
         <CardDescription>
