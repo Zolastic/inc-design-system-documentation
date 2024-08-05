@@ -67,7 +67,7 @@ const toastProps: DocComponentProp[] = [
         prop: "toastOptions",
         type: "ToastOptions",
         description:
-          "These will act as default options for all toasts. Default is 4000.",
+          "These will act as default options for all toasts. Default is 4000ms duration.",
         default: "4000",
       },
     ],
@@ -90,13 +90,13 @@ const toastProps: DocComponentProp[] = [
       {
         prop: "id",
         type: "string | number",
-        description: "Custom id for the toast.",
+        description: "Custom ID for the toast.",
         default: "-",
       },
       {
         prop: "closeButton",
         type: "boolean",
-        description: "Adds a close button. Default is false.",
+        description: "Adds a close button to the toast. Default is false.",
         default: "false",
       },
       {
@@ -117,27 +117,28 @@ const toastProps: DocComponentProp[] = [
         prop: "duration",
         type: "number",
         description:
-          "Time in milliseconds that should elapse before automatically closing the toast. Default is 4000.",
+          "Time in milliseconds before automatically closing the toast. Default is 4000ms.",
         default: "4000",
       },
       {
         prop: "onDismiss",
         type: "() => void",
         description:
-          "Function called when either the close button is clicked, or the toast is swiped. Default is '-'.",
+          "Function called when the close button is clicked or the toast is swiped. Default is '-'.",
         default: "-",
       },
       {
         prop: "onAutoClose",
         type: "() => void",
         description:
-          "Function called when the toast disappears automatically after its timeout (duration prop). Default is '-'.",
+          "Function called when the toast disappears automatically after its timeout. Default is '-'.",
         default: "-",
       },
       {
         prop: "position",
         type: "'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'top-center' | 'bottom-center'",
-        description: "Position of the toast. Default is 'bottom-right'.",
+        description:
+          "Position of the toast on the screen. Default is 'bottom-right'.",
         default: "'bottom-right'",
       },
     ],
@@ -193,6 +194,32 @@ export default ToastDemo;`,
   usageCode: `toast.info("Event has been added!", {
     description: "You can view the event in the calendar.",
 });`,
+  additionalCode: [
+    {
+      title: "RootLayout.tsx",
+      description: "Custom toast with a close button.",
+      code: `import { Inter } from "next/font/google";
+import "./globals.css";
+
+import { Toaster } from "inc-design-system/toast";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+      <Toaster />
+    </html>
+  );
+}
+`,
+    },
+  ],
   props: toastProps,
 };
 
