@@ -48,6 +48,24 @@ const datePickerProps: DocComponentProp[] = [
         default: "''",
       },
       {
+        prop: "dropDownClassName",
+        type: "string",
+        description:
+          "A string that is added to the class list of the dropdown element in the date picker. This can be used to add custom styles to the dropdown.",
+      },
+      {
+        prop: "calendarClassName",
+        type: "string",
+        description:
+          "A string that is added to the class list of the calendar element in the date picker. This can be used to add custom styles to the calendar.",
+      },
+      {
+        prop: "disabledDates",
+        type: "Matcher | Matcher[] | undefined",
+        description:
+          "Specifies which days should be disabled in the calendar. It can disable specific dates, ranges, or days of the week. Supports complex conditions like disabling before, after, or specific days.",
+      },
+      {
         prop: "onOpenChange",
         type: "function",
         description:
