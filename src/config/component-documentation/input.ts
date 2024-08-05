@@ -21,8 +21,17 @@ const inputProps: DocComponentProp[] = [
       },
       {
         prop: "type",
-        type: '"password"',
-        description: "Specifies the type of the input. Default is 'text'.",
+        type: '"text" | "password" | "email" | "number" | "search" | "tel" | "url" | "date" | "time" | "datetime-local" | "month" | "week" | "color"',
+        description:
+          "Specifies the type of the input. When `type='password'`, it enables the ability to toggle the visibility of the input. Default is 'text'.",
+        default: "'text'",
+      },
+      {
+        prop: "containerClassName",
+        type: "string",
+        description:
+          "The class name to control the parent div of the input, only applicable when `type='password'`.",
+        default: "-",
       },
       // Other React.InputHTMLAttributes<HTMLInputElement> props are inherited
       // Props like value, onChange, etc. are available but not documented here
