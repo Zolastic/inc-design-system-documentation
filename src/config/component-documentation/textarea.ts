@@ -9,10 +9,16 @@ const textareaProps: DocComponentProp[] = [
     component: "Textarea",
     props: [
       {
+        prop: "className",
+        type: "string",
+        description: "Additional CSS classes to apply to the Textarea element.",
+        default: "-",
+      },
+      {
         prop: "autosize",
         type: "boolean",
         description:
-          "Resizes Textarea height automatically based on text content, if true. Note: The auto resize fires onChange, so it may not work if Textarea value is there by default (e.g., `<Textarea value='Some huge text' />`) or if a placeholder is used. Default is false.",
+          "Resizes the Textarea height automatically based on text content if true. Note: The auto resize triggers onChange, so it may not work properly if the Textarea has a default value (e.g., `<Textarea value='Some huge text' />`) or if a placeholder is used. Default is false.",
         default: "false",
       },
       {
@@ -22,13 +28,11 @@ const textareaProps: DocComponentProp[] = [
           "Sets whether to show or hide the character count, which will be displayed below the Textarea on the right. This can be used with the maxLength property, which will show as char_count/maxLength. Default is false.",
         default: "false",
       },
-      // Discrepancy: The following prop is not documented in the component's source code
       {
-        // prop: "containerClassName",
-        prop: "className",
+        prop: "containerClassName",
         type: "string",
         description:
-          "The classname to control the parent div of the textarea, only works when showCharCount={true}. Default is false.",
+          "Class name to control the parent div of the Textarea. This is effective only when `showCharCount={true}`.",
         default: "-",
       },
       // Other React.TextareaHTMLAttributes<HTMLTextAreaElement> props are inherited
