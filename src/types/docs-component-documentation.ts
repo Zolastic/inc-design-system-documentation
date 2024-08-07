@@ -6,6 +6,7 @@ type DocComponentDocumentation = {
   previewComponent: () => JSX.Element;
   usageCodeImport: string;
   usageCode: string;
+  additionalCode?: AdditionalCode[];
   props?: DocComponentProp[];
 };
 
@@ -21,6 +22,12 @@ type DocComponentLink = {
   url: string;
 };
 
+type AdditionalCode = {
+  title: string;
+  description?: string;
+  code: string;
+};
+
 type DocComponentProp = {
   component: string;
   props: ComponentProp[];
@@ -30,6 +37,7 @@ type DocComponentProp = {
 export type {
   DocComponentDocumentation,
   ComponentProp,
+  AdditionalCode,
   DocComponentProp,
   DocComponentLink,
 };

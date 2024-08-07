@@ -18,13 +18,13 @@ const rangeDatePickerProps: DocComponentProp[] = [
         prop: "selected",
         type: "CalendarDateRange | undefined",
         description:
-          "The currently selected date. If a date is selected, it will be displayed in the date picker. If no date is selected, the placeholder text will be displayed instead.",
+          "The currently selected date range. If a date range is selected, it will be displayed in the date picker. If no date is selected, the placeholder text will be displayed instead.",
       },
       {
         prop: "onSelect",
         type: "(date: CalendarDateRange | undefined) => void",
         description:
-          "A callback function that is called when a date is selected in the date picker. The selected date range is passed as an argument to this function.",
+          "A callback function that is called when a date range is selected in the date picker. The selected date range is passed as an argument to this function.",
       },
       {
         prop: "disabled",
@@ -41,6 +41,18 @@ const rangeDatePickerProps: DocComponentProp[] = [
         default: "''",
       },
       {
+        prop: "dropDownClassName",
+        type: "string",
+        description:
+          "A string that is added to the class list of the dropdown element in the date picker. This can be used to add custom styles to the dropdown.",
+      },
+      {
+        prop: "calendarClassName",
+        type: "string",
+        description:
+          "A string that is added to the class list of the calendar element in the date picker. This can be used to add custom styles to the calendar.",
+      },
+      {
         prop: "startDatePlaceholder",
         type: "string",
         description:
@@ -53,6 +65,12 @@ const rangeDatePickerProps: DocComponentProp[] = [
         description:
           "The placeholder text that is displayed when the end date is not selected.",
         default: "'End date'",
+      },
+      {
+        prop: "disabledDates",
+        type: "Matcher | Matcher[] | undefined",
+        description:
+          "Specifies which days should be disabled in the calendar. It can disable specific dates, ranges, or days of the week. Supports complex conditions like disabling before, after, or specific days.",
       },
       {
         prop: "onOpenChange",
